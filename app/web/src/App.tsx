@@ -306,7 +306,25 @@ function OAuthArea({ oauth, onLogout }: { oauth: OAuthStatus | null; onLogout: (
 
 function TankView({ eco, onOpen }: { eco: Ecosystem; onOpen: (q: string, url?: string) => void }) {
   const [params, setParams] = useState<EnvParams>({ rankMode: 'votes', climate: 'rational', authorityBoost: false });
-  const [timeIdx, setTimeIdx] = useState<number>(eco.species.length);
+  const [timeIdx, setTimeIdx] = useState<number>(1);
+  const [playedEntry, setPlayedEntry] = useState(false);
+  useEffect(() => {
+    const key = `tank-entry-played:${eco.question}:${eco.createdAt}`;
+    const already = sessionStorage.getItem(key);
+    if (already) { setTimeIdx(eco.species.length); setPlayedEntry(true); return; }
+    setTimeIdx(1);
+    let idx = 1;
+    const timer = window.setInterval(() => {
+      idx += 1;
+      setTimeIdx(Math.min(idx, eco.species.length));
+      if (idx >= eco.species.length) {
+        window.clearInterval(timer);
+        sessionStorage.setItem(key, '1');
+        setPlayedEntry(true);
+      }
+    }, 260);
+    return () => window.clearInterval(timer);
+  }, [eco.question, eco.createdAt, eco.species.length]);
   const [release, setRelease] = useState<ReleaseReport | null>(null);
 
   const sorted = useMemo(() => [...eco.species].sort((a, b) => a.editTime - b.editTime), [eco.species]);

@@ -288,18 +288,11 @@ function ReleasePanel({
         <span>往缸里放生一段你的回答</span>
         <span className="badge-warn">AI 模拟预测</span>
       </div>
-      <div className="chip-row">
-        {DRAFT_SEEDS.map(([label, text]) => (
-          <button key={label} className="chip" onClick={() => setDraft(text)}>
-            {label}
-          </button>
-        ))}
-        {draft && (
-          <button className="chip" onClick={() => setDraft('')}>
-            清空
-          </button>
-        )}
-      </div>
+      {draft && (
+        <div className="chip-row">
+          <button className="chip" onClick={() => setDraft('')}>清空草稿</button>
+        </div>
+      )}
       <textarea
         value={draft}
         onChange={(e) => setDraft(e.target.value)}
