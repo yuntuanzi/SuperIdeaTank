@@ -384,8 +384,8 @@ function TankView({ eco, onOpen }: { eco: Ecosystem; onOpen: (q: string, url?: s
             </div>
           </div>
         </div>
-        {/* 标注器自我诊断告警必须可见（spec 第 5 节）：出现即不可藏，措辞按问题类型分情况 */}
-        {warnText && <div className="toast is-warn" role="status"><Icon.AlertTriangle size={13} /><span>{warnText}</span></div>}
+        {/* 标注器自我诊断告警统一作为右上角消息提示，不占用内容流。 */}
+        {warnText && <div className="toast is-warn toast-tank" role="status"><Icon.AlertTriangle size={13} /><span>{warnText}</span></div>}
         {eco.narrative && <div className="narrative">{eco.narrative}</div>}
         <Tank
           species={visible}

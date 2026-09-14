@@ -755,6 +755,7 @@ textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 
 .toast.is-ok { border-color: var(--ok-line); color: var(--ok); }
 .toast.is-err { border-color: rgba(232, 131, 106, 0.38); color: var(--danger); }
 .toast.is-warn { border-color: var(--warn-line); color: var(--warn); }
+.toast-tank { top: 76px; }
 .toast > span { color: inherit; }
 .toast-close { display: inline-flex; margin-left: 5px; padding: 2px; border: 0; background: transparent; color: var(--ink-3); cursor: pointer; }
 .toast-close:hover { color: var(--ink); }

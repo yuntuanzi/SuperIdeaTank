@@ -248,7 +248,7 @@ app.post('/api/ecosystem/narrative', async (req, res) => {
   const current = narrativeHistory.get(sid);
   const history = current?.day === day ? current : { day, items: [] };
   if (history.items.length >= NARRATIVE_DAILY_LIMIT) {
-    return res.status(429).json({ error: '今日 AI 生态解说重新生成次数已用完（每日 2 次）', code: 'NARRATIVE_DAILY_LIMIT', remaining: 0, history: history.items });
+    return res.status(429).json({ error: '今日 AI 生态解说重新生成次数已用完（每日 15 次）', code: 'NARRATIVE_DAILY_LIMIT', remaining: 0, history: history.items });
   }
   try {
     const data = await explainEcosystem(question, species, { includeAi: true });
