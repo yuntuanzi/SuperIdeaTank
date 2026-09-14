@@ -46,7 +46,14 @@ export default function App() {
 
   useEffect(() => {
     api.status().then(setStatus).catch(() => setStatus({ liveMode: false }));
-    api.oauthStatus().then(setOauth).catch(() => setOauth(null));
+    api.oauthStatus().then((nextOauth) => {
+      setOauth(nextOauth);
+      const onHome = new URLSearchParams(window.location.search).get('view') !== 'tank' && new URLSearchParams(window.location.search).get('view') !== 'profile';
+      if (onHome && !nextOauth.authorized && !sessionStorage.getItem('home-auth-prompted')) {
+        sessionStorage.setItem('home-auth-prompted', '1');
+        setAuthModal(true);
+      }
+    }).catch(() => setOauth(null));
     // 通过 URL 恢复当前生态缸：服务端优先命中生态缓存，不重复消耗 AI/知乎额度。
     const params = new URLSearchParams(window.location.search);
     const savedQuestion = params.get('question');

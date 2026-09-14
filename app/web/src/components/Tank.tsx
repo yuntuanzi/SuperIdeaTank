@@ -123,7 +123,8 @@ function useTweenNodes(target: VizNode[]): VizNode[] {
           const fx = Number.isFinite(f.x) ? f.x : n.x;
           const fy = Number.isFinite(f.y) ? f.y : n.y;
           const fr = Number.isFinite(f.r) ? f.r : 0;
-          return { ...n, x: fx + (n.x - fx) * k, y: fy + (n.y - fy) * k, r: fr + (n.r - fr) * k };
+          const radius = fr + (n.r - fr) * k;
+          return { ...n, x: fx + (n.x - fx) * k, y: fy + (n.y - fy) * k, r: Math.max(1, Number.isFinite(radius) ? radius : n.r) };
         }),
       );
       if (t < 1) {
@@ -282,12 +283,12 @@ export function Tank({
                 onMouseEnter={() => setHovered(n.id)}
                 onMouseLeave={() => setHovered((h) => (h === n.id ? null : h))}
               >
-                <circle cx={n.x} cy={n.y} r={n.r + 7} fill={c.fill} opacity={0.35} />
+                <circle cx={n.x} cy={n.y} r={Math.max(1, n.r + 7)} fill={c.fill} opacity={0.35} />
                 <circle
                   className="core"
                   cx={n.x}
                   cy={n.y}
-                  r={n.r}
+                  r={Math.max(1, n.r)}
                   fill={c.fill}
                   stroke={isSel ? '#FFFFFF' : c.stroke}
                   strokeWidth={sw}
@@ -299,7 +300,7 @@ export function Tank({
                   <circle
                     cx={n.x}
                     cy={n.y}
-                    r={n.r - 5}
+                    r={Math.max(1, n.r - 5)}
                     fill="none"
                     stroke={c.stroke}
                     strokeWidth={1}
