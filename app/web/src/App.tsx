@@ -64,7 +64,10 @@ export default function App() {
     if (flag) {
       setOauthNotice(flag === 'ok' ? { text: '知乎账号授权成功', ok: true } : { text: '授权未完成，请重试', ok: false });
       if (flag === 'ok') setView('profile');
-      window.history.replaceState(null, '', window.location.pathname);
+      const callbackUrl = new URL(window.location.href);
+      callbackUrl.searchParams.delete('oauth');
+      if (flag === 'ok') callbackUrl.searchParams.set('view', 'profile');
+      window.history.replaceState(null, '', callbackUrl);
       // 回调刚写完会话，重新拉一次授权态而不是用首屏的旧值
       api.oauthStatus().then(setOauth).catch(() => {});
     }
@@ -180,7 +183,13 @@ export default function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <div className="brand">
+          <button className="brand" type="button" aria-label="返回首页" onClick={() => {
+            setView('board');
+            setEco(null);
+            const homeUrl = new URL(window.location.href);
+            homeUrl.search = '';
+            window.history.pushState({ view: 'board' }, '', homeUrl);
+          }}>
           <svg className="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
             <rect x="1.5" y="1.5" width="31" height="31" rx="9" fill="#0D1B2E" />
             <circle cx="12" cy="14" r="4.5" fill="rgba(66,133,244,0.45)" stroke="#7FAAF0" strokeWidth="1" />
@@ -192,7 +201,7 @@ export default function App() {
             <h1>观点进化缸</h1>
             <div className="sub">Opinion Evolution Tank · 像生物学家一样围观知乎</div>
           </div>
-        </div>
+          </button>
         <div className="topbar-actions">
           {view !== 'board' && (
             <button className="backlink" onClick={() => {
