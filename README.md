@@ -1,12 +1,13 @@
-# 观点进化缸 🪣
+# 超级生态缸
 
 **Opinion Evolution Tank**
 
 把一个知乎问题，变成一座可观察、可干预、可放生的观点生态系统。
 
-[![Demo](%5Bhttps://img.shields.io/badge/%5D(https://img.shields.io/badge/)%E5%9C%A8%E7%BA%BFDemo-zh.starsalt.cc-blue?style=flat-square)](%5Bhttps://zh.starsalt.cc%5D(https://zh.starsalt.cc))
-[![Repo](%5Bhttps://img.shields.io/badge/GitHub-%5D(https://img.shields.io/badge/GitHub-)%E4%BB%93%E5%BA%93-green?style=flat-square)](%5Bhttps://github.com/yuntuanzi/SuperIdeaTank%5D(https://github.com/yuntuanzi/SuperIdeaTank))
-[![Hackathon](%5Bhttps://img.shields.io/badge/%5D(https://img.shields.io/badge/)%E7%9F%A5%E4%B9%8E%E9%BB%91%E5%AE%A2%E6%9D%BE-2026%E6%A0%A1%E5%9B%AD%E6%96%B0%E9%94%90%E5%AD%A3-orange?style=flat-square)](%5Bhttps://zh.starsalt.cc%5D(https://zh.starsalt.cc))
+[![Demo](https://img.shields.io/badge/Demo-zh.starsalt.cc-blue?style=flat-square)](https://zh.starsalt.cc)
+[![Repo](https://img.shields.io/badge/GitHub-仓库-green?style=flat-square)](https://github.com/yuntuanzi/SuperIdeaTank)
+[![Hackathon](https://img.shields.io/badge/知乎黑客松-2026校园创新大赛-orange?style=flat-square)](https://zh.starsalt.cc)
+
 
 ---
 
