@@ -318,21 +318,13 @@ function OAuthArea({ oauth, onLogout }: { oauth: OAuthStatus | null; onLogout: (
 function TankView({ eco, onOpen }: { eco: Ecosystem; onOpen: (q: string, url?: string) => void }) {
   const [params, setParams] = useState<EnvParams>({ rankMode: 'votes', climate: 'rational', authorityBoost: false });
   const [timeIdx, setTimeIdx] = useState<number>(1);
-  const [playedEntry, setPlayedEntry] = useState(false);
   useEffect(() => {
-    const key = `tank-entry-played:${eco.question}:${eco.createdAt}`;
-    const already = sessionStorage.getItem(key);
-    if (already) { setTimeIdx(eco.species.length); setPlayedEntry(true); return; }
     setTimeIdx(1);
     let idx = 1;
     const timer = window.setInterval(() => {
       idx += 1;
       setTimeIdx(Math.min(idx, eco.species.length));
-      if (idx >= eco.species.length) {
-        window.clearInterval(timer);
-        sessionStorage.setItem(key, '1');
-        setPlayedEntry(true);
-      }
+      if (idx >= eco.species.length) window.clearInterval(timer);
     }, 260);
     return () => window.clearInterval(timer);
   }, [eco.question, eco.createdAt, eco.species.length]);
@@ -347,18 +339,6 @@ function TankView({ eco, onOpen }: { eco: Ecosystem; onOpen: (q: string, url?: s
   }, [visible]);
 
   const isQa = (eco as { dataSource?: string }).dataSource === 'question_answers';
-  // annotationWarning 分情况措辞（附录 A3）：立场告警在归因/求解型问题上是误导——
-  // 那里多数回答中立可能完全正确；「维度不适用」不能说成「模型判不准」。
-  // 策略告警与判断型问题的立场告警一律原样显示服务端文案。
-  const qtype = classifyQuestion(eco.question);
-  const warnText = (() => {
-    const w = eco.annotationWarning;
-    if (!w) return null;
-    if (w.startsWith('立场') && isExplanationType(qtype)) {
-      return `本题为${qtype === 'why' ? '归因' : '求解'}型提问，回答以解释为主而非站队 —— 立场维度参考价值有限`;
-    }
-    return w;
-  })();
   const stanceCount = useMemo(() => {
     const m = new Map<string, number>();
     for (const s of visible) m.set(s.stance, (m.get(s.stance) || 0) + 1);
@@ -384,8 +364,6 @@ function TankView({ eco, onOpen }: { eco: Ecosystem; onOpen: (q: string, url?: s
             </div>
           </div>
         </div>
-        {/* 标注器自我诊断告警统一作为右上角消息提示，不占用内容流。 */}
-        {warnText && <div className="toast is-warn toast-tank" role="status"><Icon.AlertTriangle size={13} /><span>{warnText}</span></div>}
         {eco.narrative && <div className="narrative">{eco.narrative}</div>}
         <Tank
           species={visible}
