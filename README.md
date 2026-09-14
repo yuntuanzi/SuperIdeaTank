@@ -1,13 +1,14 @@
 # 超级生态缸
 
-**Opinion Evolution Tank**
+# 超级生态缸
+
+### Opinion Evolution Tank
 
 把一个知乎问题，变成一座可观察、可干预、可放生的观点生态系统。
 
-[![Demo](https://img.shields.io/badge/Demo-zh.starsalt.cc-blue?style=flat-square)](https://zh.starsalt.cc)
-[![Repo](https://img.shields.io/badge/GitHub-仓库-green?style=flat-square)](https://github.com/yuntuanzi/SuperIdeaTank)
-[![Hackathon](https://img.shields.io/badge/知乎黑客松-2026校园创新大赛-orange?style=flat-square)](https://zh.starsalt.cc)
-
+[![Demo](%5Bhttps://img.shields.io/badge/Demo-zh.starsalt.cc-blue?style=flat-square%5D(https://img.shields.io/badge/Demo-zh.starsalt.cc-blue?style=flat-square))](%5Bhttps://zh.starsalt.cc%5D(https://zh.starsalt.cc))
+[![Repo](%5Bhttps://img.shields.io/badge/GitHub-%5D(https://img.shields.io/badge/GitHub-)%E4%BB%93%E5%BA%93-green?style=flat-square)](%5Bhttps://github.com/yuntuanzi/SuperIdeaTank%5D(https://github.com/yuntuanzi/SuperIdeaTank))
+[![Hackathon](%5Bhttps://img.shields.io/badge/%5D(https://img.shields.io/badge/)%E7%9F%A5%E4%B9%8E%E9%BB%91%E5%AE%A2%E6%9D%BE-2026%E6%A0%A1%E5%9B%AD%E5%88%9B%E6%96%B0%E5%A4%A7%E8%B5%9B-orange?style=flat-square)](%5Bhttps://zh.starsalt.cc%5D(https://zh.starsalt.cc))
 
 ---
 
@@ -18,7 +19,10 @@
 **观点进化缸**把问题下的回答视作生态中的不同物种，将赞同、内容特征、立场、表达策略与权威等级转化为一套可观察的生态模型。用户可以像生物学家一样观察观点如何进入生态位、竞争注意力，并通过改变环境参数，模拟不同规则下的观点演化。
 
 > 
-> 赞同是能量，评论是繁殖，热榜是气候突变。高赞回答不一定是最正确的，而可能是最适应当时生态位的物种。
+> 赞同是能量，评论是繁殖，热榜是气候突变。
+> 
+> 
+> 高赞回答不一定是最正确的，而可能是最适应当时生态位的物种。
 
 ## 核心体验 ✨
 
@@ -54,10 +58,9 @@ API Key 只存储在服务端环境变量中，不进入前端、仓库、镜像
 ### 参赛赛事
 
 - **赛事**：知乎黑客松 2026 · 校园新锐季
-- **活动代码**：`zhihu_hackathon_2026_p2`
 - **参赛赛道**：知识炼金场
 - **作品定位**：将知乎问题转化为可观察、可干预的观点生态系统
-- **在线 Demo**：[https://zh.starsalt.cc](https://zh.starsalt.cc)
+- **在线 Demo**：[](%5Bhttps://zh.starsalt.cc%5D(https://zh.starsalt.cc))[https://zh.starsalt.cc](https://zh.starsalt.cc)
 
 ### 团队信息
 
@@ -124,8 +127,6 @@ npm install
 npm run build
 ```
 
-访问：<[http://localhost:8787](http://localhost:8787)>
-
 没有配置凭证时，系统会进入演示模式，不会伪装成实时数据。
 
 ## Docker 部署 🐳
@@ -176,4 +177,7 @@ npm run build
 
 ---
 
+> 
 > 🌟 如果觉得本项目对您有帮助，欢迎Star！
+
+---
