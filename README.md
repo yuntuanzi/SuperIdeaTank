@@ -1,26 +1,25 @@
-# 观点进化缸
-
-<div align="center">
+# 观点进化缸 🪣
 
 **Opinion Evolution Tank**
 
 把一个知乎问题，变成一座可观察、可干预、可放生的观点生态系统。
 
-[在线 Demo](https://zh.starsalt.cc) · [项目仓库](https://github.com/yuntuanzi/SuperIdeaTank)
-
-</div>
+[![Demo](%5Bhttps://img.shields.io/badge/%5D(https://img.shields.io/badge/)%E5%9C%A8%E7%BA%BFDemo-zh.starsalt.cc-blue?style=flat-square)](%5Bhttps://zh.starsalt.cc%5D(https://zh.starsalt.cc))
+[![Repo](%5Bhttps://img.shields.io/badge/GitHub-%5D(https://img.shields.io/badge/GitHub-)%E4%BB%93%E5%BA%93-green?style=flat-square)](%5Bhttps://github.com/yuntuanzi/SuperIdeaTank%5D(https://github.com/yuntuanzi/SuperIdeaTank))
+[![Hackathon](%5Bhttps://img.shields.io/badge/%5D(https://img.shields.io/badge/)%E7%9F%A5%E4%B9%8E%E9%BB%91%E5%AE%A2%E6%9D%BE-2026%E6%A0%A1%E5%9B%AD%E6%96%B0%E9%94%90%E5%AD%A3-orange?style=flat-square)](%5Bhttps://zh.starsalt.cc%5D(https://zh.starsalt.cc))
 
 ---
 
-## 项目简介
+## 项目简介 📖
 
 知乎把回答按热度排列，却没有告诉我们：为什么某些观点能够留下？
 
 **观点进化缸**把问题下的回答视作生态中的不同物种，将赞同、内容特征、立场、表达策略与权威等级转化为一套可观察的生态模型。用户可以像生物学家一样观察观点如何进入生态位、竞争注意力，并通过改变环境参数，模拟不同规则下的观点演化。
 
+> 
 > 赞同是能量，评论是繁殖，热榜是气候突变。高赞回答不一定是最正确的，而可能是最适应当时生态位的物种。
 
-## 核心体验
+## 核心体验 ✨
 
 | 模块 | 能力 |
 | --- | --- |
@@ -32,7 +31,7 @@
 | **观点放生实验** | 输入尚未发布的回答，预测其在当前生态中的存活概率 |
 | **观点画像** | 授权知乎账号后，分析公开创作内容的观点分布 |
 
-## AI 与数据诚信
+## AI 与数据诚信 🛡️
 
 项目使用 DeepSeek 官方 API 完成语义识别与生态解说：
 
@@ -49,7 +48,7 @@
 
 API Key 只存储在服务端环境变量中，不进入前端、仓库、镜像或日志。
 
-## 赛事与团队
+## 赛事与团队 👥
 
 ### 参赛赛事
 
@@ -57,16 +56,16 @@ API Key 只存储在服务端环境变量中，不进入前端、仓库、镜像
 - **活动代码**：`zhihu_hackathon_2026_p2`
 - **参赛赛道**：知识炼金场
 - **作品定位**：将知乎问题转化为可观察、可干预的观点生态系统
-- **在线 Demo**：https://zh.starsalt.cc
+- **在线 Demo**：[https://zh.starsalt.cc](https://zh.starsalt.cc)
 
 ### 团队信息
 
 - **队伍名称**：云航沐言
 - **队员**：云团子、Bokily
 
-## 技术方案
+## 技术方案 ⚙️
 
-```text
+```
 知乎开放平台 API
         │
         ├── 热榜 / 搜索 / 问题回答
@@ -86,7 +85,7 @@ React + TypeScript + Vite
         └── 放生预测报告
 ```
 
-技术栈：
+**技术栈**
 
 - 前端：React 18、TypeScript、Vite、D3 Force
 - 服务端：Node.js 22、Express
@@ -94,7 +93,7 @@ React + TypeScript + Vite
 - 数据可视化：SVG、D3 Force Layout
 - 部署：Docker 多阶段构建、Node 长驻进程、Nginx HTTPS 反向代理
 
-## 本地运行
+## 本地运行 🚀
 
 ### 环境要求
 
@@ -105,34 +104,32 @@ React + TypeScript + Vite
 
 ### 启动开发环境
 
-```bash
+```
 cd app/server
 npm install
-
 # 创建 app/server/.env，并按需填写：
 # ZHIHU_ACCESS_SECRET=your_secret
 # DEEPSEEK_API_KEY=your_key
 # DEEPSEEK_MODEL=deepseek-flash
 # DEEPSEEK_MODEL_PRO=deepseek-v4-pro
-
 npm start
 ```
 
 另开终端构建前端：
 
-```bash
+```
 cd app/web
 npm install
 npm run build
 ```
 
-访问：<http://localhost:8787>
+访问：<[http://localhost:8787](http://localhost:8787)>
 
 没有配置凭证时，系统会进入演示模式，不会伪装成实时数据。
 
-## Docker 部署
+## Docker 部署 🐳
 
-```bash
+```
 docker build -t opinion-tank .
 docker run -d \
   --name opinion-tank \
@@ -145,9 +142,9 @@ docker run -d \
 
 `/app/server/data` 用于保存生态缸缓存、AI 输出缓存与预构建数据。生产环境必须使用持久化卷，以避免容器重启后重复消耗 API 额度。
 
-## 目录结构
+## 目录结构 📂
 
-```text
+```
 .
 ├── app
 │   ├── server
@@ -161,18 +158,21 @@ docker run -d \
 └── render.yaml               # Render 部署配置
 ```
 
-## 测试与质量检查
+## 测试与质量检查 ✅
 
-```bash
+```
 cd app/server
 node --test test/*.test.mjs
-
 cd ../web
 npm run build
 ```
 
 当前版本已验证：服务端全量测试 75/75 通过，前端 TypeScript 检查与生产构建通过。
 
-## 开源说明
+## 开源说明 📜
 
-本项目为知乎黑客松 2026 · 校园新锐季参赛作品。项目中的真实数据缓存、访问凭证和运行时敏感配置不随代码仓库发布。
+本项目为知乎黑客松 2026 · 校园新锐季参赛作品，版权所有。
+
+---
+
+> 🌟 如果觉得本项目对您有帮助，欢迎Star！
