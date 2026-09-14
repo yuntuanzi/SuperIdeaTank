@@ -167,8 +167,8 @@ export async function buildEcosystem(question, questionUrl, options = {}) {
   const ctx = { ...options, annotate, classify };
   const trimmedUrl = typeof questionUrl === 'string' ? questionUrl.trim() : '';
 
-  // 问题类型与物种标注互相独立，并发发起以省掉一次串行等待（各约 3-6s）。
-  const qtypePromise = resolveQuestionType(question, classify, ctx);
+  // 先抓取知乎问题与回答，再启动 AI。抓取阶段不应提前消耗 AI 额度，
+  // 也避免数据尚未准备好时 AI 先行失败。
 
   if (trimmedUrl && QUESTION_URL_RE.test(trimmedUrl)) {
     emit(ctx, { type: 'stage', key: 'fetch', label: '直取该问题下的回答样本', state: 'start' });
@@ -178,7 +178,7 @@ export async function buildEcosystem(question, questionUrl, options = {}) {
       // 空缸同样返回完整契约，前端不需要猜测字段缺失是否代表 AI 出错。
       return completeEcosystem(
         { question, questionUrl: trimmedUrl, source: 'live', dataSource: 'question_answers', createdAt: Date.now(), species: [], note: '该问题下暂未获取到回答' },
-        { ...ctx, _qtypePromise: qtypePromise },
+        { ...ctx },
       );
     }
 
@@ -240,7 +240,7 @@ export async function buildEcosystem(question, questionUrl, options = {}) {
         fromGlobalSearch: sameQuestionItems.length,
         strategy: 'merge-two-samples',
       },
-    }, { ...ctx, _qtypePromise: qtypePromise });
+    }, { ...ctx });
   }
 
   // 通道 B：关键词搜索汇聚
@@ -258,7 +258,7 @@ export async function buildEcosystem(question, questionUrl, options = {}) {
     // 搜索失败与搜索成功但无结果不同，后者可以安全返回一个完整的空缸。
     return completeEcosystem(
       { question, source: 'live', dataSource: 'search', createdAt: Date.now(), species: [], note: '搜索未返回可用回答' },
-      { ...ctx, _qtypePromise: qtypePromise },
+      { ...ctx },
     );
   }
   emit(ctx, { type: 'log', text: `相关性过滤后保留 ${picked.length} 条样本` });
@@ -282,7 +282,7 @@ export async function buildEcosystem(question, questionUrl, options = {}) {
     species,
     annotationWarning,
     annotationSource,
-  }, { ...ctx, _qtypePromise: qtypePromise });
+  }, { ...ctx });
 }
 
 // 标注阶段：AI 优先，失败逐条回退本地。
@@ -439,11 +439,10 @@ export async function explainEcosystem(question, species, options = {}) {
 
 // 两条采集通道共用收尾，避免 AI 出错时遗漏本地叙事或空值字段。
 async function completeEcosystem(tank, options) {
-  const { _qtypePromise, ...rest } = options;
-  const [qtype, ai] = await Promise.all([
-    _qtypePromise ?? resolveQuestionType(tank.question, rest.classify, rest),
-    explainEcosystem(tank.question, tank.species, rest),
-  ]);
+  const rest = options;
+  // 数据已抓取并完成本地样本整理后，才在这里顺序启动 AI。
+  const qtype = await resolveQuestionType(tank.question, rest.classify, rest);
+  const ai = await explainEcosystem(tank.question, tank.species, rest);
   emit(rest, { type: 'stage', key: 'explain', label: '归纳整缸派系与优势方', state: 'done' });
   return {
     ...tank,

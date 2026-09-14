@@ -43,7 +43,7 @@ const releaseCache = new Map();
 const RELEASE_TTL = 60 * 60 * 1000;
 // AI 生态解说历史：按知乎授权会话隔离，每日最多重新生成 2 次。
 const narrativeHistory = new Map(); // sessionId -> { day, items: [{ data, ts }] }
-const NARRATIVE_DAILY_LIMIT = 2;
+const NARRATIVE_DAILY_LIMIT = 15;
 
 app.get('/api/status', (req, res) => {
   const cfg = aiConfig();
