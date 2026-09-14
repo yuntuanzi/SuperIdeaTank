@@ -126,12 +126,7 @@ export function HotBoard({
           <span>{err}</span>
         </div>
       )}
-      {warning && (
-        <div className="warn-banner">
-          <Icon.AlertTriangle size={14} />
-          <span>{warning}</span>
-        </div>
-      )}
+      {warning && <div className="toast is-warn" role="status"><Icon.AlertTriangle size={13} /><span>{warning}</span></div>}
 
       <div className="section-head">
         <h3>热榜选题</h3>

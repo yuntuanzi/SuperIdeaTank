@@ -5,7 +5,6 @@ import { HotBoard } from './components/HotBoard';
 import type { HotMeta } from './components/HotBoard';
 import { Tank } from './components/Tank';
 import { Workspace } from './components/Workspace';
-import { ProfileView } from './components/ProfileView';
 import { BuildProgress } from './components/BuildProgress';
 import { Icon } from './components/Icon';
 import { classifyQuestion, isExplanationType } from './lib/questionType';
@@ -20,9 +19,8 @@ const PROGRESS_DELAY_MS = 350;
 
 export default function App() {
   const [status, setStatus] = useState<{ liveMode: boolean } | null>(null);
-  const [view, setView] = useState<'board' | 'tank' | 'profile'>(() => {
-    const saved = new URLSearchParams(window.location.search).get('view');
-    return saved === 'tank' || saved === 'profile' ? saved : 'board';
+  const [view, setView] = useState<'board' | 'tank'>(() => {
+    return new URLSearchParams(window.location.search).get('view') === 'tank' ? 'tank' : 'board';
   });
   const [eco, setEco] = useState<Ecosystem | null>(null);
   const [restoring, setRestoring] = useState(() => new URLSearchParams(window.location.search).get('view') === 'tank');
@@ -48,7 +46,7 @@ export default function App() {
     api.status().then(setStatus).catch(() => setStatus({ liveMode: false }));
     api.oauthStatus().then((nextOauth) => {
       setOauth(nextOauth);
-      const onHome = new URLSearchParams(window.location.search).get('view') !== 'tank' && new URLSearchParams(window.location.search).get('view') !== 'profile';
+      const onHome = new URLSearchParams(window.location.search).get('view') !== 'tank';
       if (onHome && !nextOauth.authorized && !sessionStorage.getItem('home-auth-prompted')) {
         sessionStorage.setItem('home-auth-prompted', '1');
         setAuthModal(true);
@@ -70,10 +68,8 @@ export default function App() {
     const flag = new URLSearchParams(window.location.search).get('oauth');
     if (flag) {
       setOauthNotice(flag === 'ok' ? { text: '知乎账号授权成功', ok: true } : { text: '授权未完成，请重试', ok: false });
-      if (flag === 'ok') setView('profile');
       const callbackUrl = new URL(window.location.href);
       callbackUrl.searchParams.delete('oauth');
-      if (flag === 'ok') callbackUrl.searchParams.set('view', 'profile');
       window.history.replaceState(null, '', callbackUrl);
       // 回调刚写完会话，重新拉一次授权态而不是用首屏的旧值
       api.oauthStatus().then(setOauth).catch(() => {});
@@ -228,28 +224,16 @@ export default function App() {
               <Icon.ArrowLeft size={13} /> 返回选题台
             </button>
           )}
-          {/* 「我的观点画像」与 board/tank 平级的第三个视图入口 */}
-          {view !== 'profile' && (
-            <button className="backlink" onClick={() => {
-              setView('profile');
-              const profileUrl = new URL(window.location.href);
-              profileUrl.searchParams.set('view', 'profile');
-              profileUrl.searchParams.delete('question');
-              profileUrl.searchParams.delete('url');
-              window.history.pushState({ view: 'profile' }, '', profileUrl);
-            }}>
-              <Icon.User size={13} /> 我的观点画像
-            </button>
-          )}
           <OAuthArea oauth={oauth} onLogout={logout} />
           <span className={`source-badge ${badge.cls}`}>{badge.text}</span>
         </div>
       </header>
 
       {oauthNotice && (
-        <div className={`oauth-notice ${oauthNotice.ok ? '' : 'is-err'}`}>
+        <div className={`toast ${oauthNotice.ok ? 'is-ok' : 'is-err'}`} role="status">
           {oauthNotice.ok ? <Icon.Check size={13} /> : <Icon.AlertTriangle size={13} />}
-          {oauthNotice.text}
+          <span>{oauthNotice.text}</span>
+          <button className="toast-close" onClick={() => setOauthNotice(null)} aria-label="关闭提示"><Icon.X size={13} /></button>
         </div>
       )}
       {authModal && (
@@ -283,8 +267,6 @@ export default function App() {
           ) : (
             <HotBoard liveMode={status?.liveMode ?? false} loading={loading} onOpen={openTank} onMeta={setHotMeta} />
           )
-        ) : view === 'profile' ? (
-          <ProfileView oauth={oauth} />
         ) : eco ? (
           <TankView eco={eco} onOpen={openTank} />
         ) : null}
@@ -403,12 +385,7 @@ function TankView({ eco, onOpen }: { eco: Ecosystem; onOpen: (q: string, url?: s
           </div>
         </div>
         {/* 标注器自我诊断告警必须可见（spec 第 5 节）：出现即不可藏，措辞按问题类型分情况 */}
-        {warnText && (
-          <div className="warn-banner" style={{ marginBottom: 12 }}>
-            <Icon.AlertTriangle size={14} />
-            <span>{warnText}</span>
-          </div>
-        )}
+        {warnText && <div className="toast is-warn" role="status"><Icon.AlertTriangle size={13} /><span>{warnText}</span></div>}
         {eco.narrative && <div className="narrative">{eco.narrative}</div>}
         <Tank
           species={visible}
