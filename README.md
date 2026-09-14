@@ -6,9 +6,10 @@
 
 把一个知乎问题，变成一座可观察、可干预、可放生的观点生态系统。
 
-[![Demo]([https://img.shields.io/badge/Demo-zh.starsalt.cc-blue?style=flat-square](https://img.shields.io/badge/Demo-zh.starsalt.cc-blue?style=flat-square))]([https://zh.starsalt.cc](https://zh.starsalt.cc))
-[![Repo]([https://img.shields.io/badge/GitHub-](https://img.shields.io/badge/GitHub-)仓库-green?style=flat-square)]([https://github.com/yuntuanzi/SuperIdeaTank](https://github.com/yuntuanzi/SuperIdeaTank))
-[![Hackathon]([https://img.shields.io/badge/](https://img.shields.io/badge/)知乎黑客松-2026校园创新大赛-orange?style=flat-square)]([https://zh.starsalt.cc](https://zh.starsalt.cc))
+[![Demo](https://img.shields.io/badge/Demo-zh.starsalt.cc-blue?style=flat-square)](https://zh.starsalt.cc)
+[![Repo](https://img.shields.io/badge/GitHub-仓库-green?style=flat-square)](https://github.com/yuntuanzi/SuperIdeaTank)
+[![Hackathon](https://img.shields.io/badge/知乎黑客松-2026校园创新大赛-orange?style=flat-square)](https://zh.starsalt.cc)
+
 
 </div>
 
@@ -60,7 +61,7 @@ API Key 只存储在服务端环境变量中，不进入前端、仓库、镜像
 - **活动代码**：`zhihu_hackathon_2026_p2`
 - **参赛赛道**：知识炼金场
 - **作品定位**：将知乎问题转化为可观察、可干预的观点生态系统
-- **在线 Demo**：[[https://zh.starsalt.cc](https://zh.starsalt.cc)]([https://zh.starsalt.cc](https://zh.starsalt.cc))
+- **在线 Demo**：[[https://zh.starsalt.cc](https://zh.starsalt.cc)
 
 ### 团队信息
 - **队伍名称**：云航沐言
@@ -122,8 +123,6 @@ cd app/web
 npm install
 npm run build
 ```
-
-访问：[](%5Bhttp://localhost:8787%5D(http://localhost:8787))[http://localhost:8787](http://localhost:8787)
 
 没有配置凭证时，系统会进入演示模式，不会伪装成实时数据。
 
