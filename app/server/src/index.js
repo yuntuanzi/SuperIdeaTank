@@ -137,6 +137,14 @@ app.post('/api/ecosystem/stream', async (req, res) => {
   const questionUrl = String(req.body?.url || '').trim().slice(0, 200);
   if (!question) return res.status(400).json({ error: '请提供问题标题' });
 
+  // 先完成会话/授权检查，再发送 SSE headers。OAuth session 可能需要写 Set-Cookie，
+  // 若先 flushHeaders 再调用 isAuthorized，会触发 ERR_HTTP_HEADERS_SENT 并让 Node 进程退出。
+  const { key: streamKey, data: streamHit } = cachedTank(question, questionUrl);
+  const requiresAiAuth = aiOn() && !streamHit && !oauth.isAuthorized(req, res);
+  if (requiresAiAuth) {
+    return res.status(401).json({ error: '请先授权登录知乎账号后使用 AI 生态缸', code: 'LOGIN_REQUIRED' });
+  }
+
   res.set({
     'Content-Type': 'text/event-stream; charset=utf-8',
     'Cache-Control': 'no-cache, no-transform',
@@ -159,9 +167,6 @@ app.post('/api/ecosystem/stream', async (req, res) => {
 
   // 客户端断开（用户返回上一页）时中止上游 AI 请求，不再空烧 token
   const ac = new AbortController();
-  // 缓存命中和演示结果可以匿名复用；新建 AI 缸才要求知乎授权。
-  const { key: streamKey, data: streamHit } = cachedTank(question, questionUrl);
-  const requiresAiAuth = aiOn() && !streamHit && !oauth.isAuthorized(req, res);
   req.on('aborted', () => {
     if (res.writableEnded) return;
     closed = true;
