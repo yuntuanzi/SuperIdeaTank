@@ -135,6 +135,12 @@ export default function App() {
       const ac = new AbortController();
       abortRef.current = ac;
       setBuildEvents([]);
+      // 构建一开始就写入 URL，等待过程中刷新也能恢复当前问题。
+      const buildUrl = new URL(window.location.href);
+      buildUrl.searchParams.set('view', 'tank');
+      buildUrl.searchParams.set('question', question);
+      if (url) buildUrl.searchParams.set('url', url); else buildUrl.searchParams.delete('url');
+      window.history.pushState({ view: 'tank', question, url, building: true }, '', buildUrl);
       setBuilding({ question });
       setShowProgress(false);
       progressTimerRef.current = window.setTimeout(() => setShowProgress(true), PROGRESS_DELAY_MS);
@@ -224,7 +230,14 @@ export default function App() {
           )}
           {/* 「我的观点画像」与 board/tank 平级的第三个视图入口 */}
           {view !== 'profile' && (
-            <button className="backlink" onClick={() => setView('profile')}>
+            <button className="backlink" onClick={() => {
+              setView('profile');
+              const profileUrl = new URL(window.location.href);
+              profileUrl.searchParams.set('view', 'profile');
+              profileUrl.searchParams.delete('question');
+              profileUrl.searchParams.delete('url');
+              window.history.pushState({ view: 'profile' }, '', profileUrl);
+            }}>
               <Icon.User size={13} /> 我的观点画像
             </button>
           )}

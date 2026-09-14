@@ -302,7 +302,7 @@ function ReleasePanel({
         <span style={{ fontSize: 12, color: 'var(--ink-3)' }}>
           {draft.trim().length} 字 · 基于缸内 {visible.length} 个物种推演
         </span>
-        <button className="btn primary" disabled={loading || draft.trim().length < 20} onClick={submit}>
+        <button className="btn primary" disabled={loading || draft.trim().length === 0} onClick={submit}>
           {loading ? '推演中…' : '放生'}
         </button>
       </div>
