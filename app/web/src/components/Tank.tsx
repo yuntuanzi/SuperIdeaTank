@@ -220,12 +220,6 @@ export function Tank({
 
   return (
     <div>
-      {/* 色轴说明（附录 A1）：归因/求解型问题不预设对立立场，颜色编码对象换了必须讲清楚 */}
-      {byStrategy && (
-        <div className="axis-note">
-          本题为{qtype === 'why' ? '归因' : '求解'}型提问，不预设对立立场 —— 颜色按生存策略编码
-        </div>
-      )}
       <div className="tank-svg-wrap">
         <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={`${question} 的观点生态缸`}>
           <title>观点生态缸</title>

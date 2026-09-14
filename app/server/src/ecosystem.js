@@ -280,7 +280,7 @@ export async function buildEcosystem(question, questionUrl, options = {}) {
     dataSource: 'search',
     createdAt: Date.now(),
     species,
-    annotationWarning,
+    annotationWarning: null,
     annotationSource,
   }, { ...ctx });
 }
