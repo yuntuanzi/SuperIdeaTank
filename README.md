@@ -10,6 +10,7 @@
 [![Repo](https://img.shields.io/badge/GitHub-仓库-green?style=flat-square)](https://github.com/yuntuanzi/SuperIdeaTank)
 [![Hackathon](https://img.shields.io/badge/知乎黑客松-2026校园创新大赛-orange?style=flat-square)](https://zh.starsalt.cc)
 
+<img width="1888" height="936" alt="image" src="https://github.com/user-attachments/assets/b0c80d05-a5d9-444f-8414-82cd559cc58a" />
 
 </div>
 
@@ -61,7 +62,7 @@ API Key 只存储在服务端环境变量中，不进入前端、仓库、镜像
 - **活动代码**：`zhihu_hackathon_2026_p2`
 - **参赛赛道**：知识炼金场
 - **作品定位**：将知乎问题转化为可观察、可干预的观点生态系统
-- **在线 Demo**：[[https://zh.starsalt.cc](https://zh.starsalt.cc)
+- **在线 Demo**：https://zh.starsalt.cc/
 
 ### 团队信息
 - **队伍名称**：云航沐言
