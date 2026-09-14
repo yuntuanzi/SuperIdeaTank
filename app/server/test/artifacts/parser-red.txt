@@ -1,0 +1,31 @@
+✖ 无空格的 Markdown 标题仍能解析五派和优势结论 (1.1522ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 63.5819
+
+✖ failing tests:
+
+test at app\server\test\ecosystem.test.mjs:138:1
+✖ 无空格的 Markdown 标题仍能解析五派和优势结论 (1.1522ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  undefined !== 5
+  
+      at TestContext.<anonymous> (file:///C:/Users/bokily/dev/super-eco/app/server/test/ecosystem.test.mjs:140:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+

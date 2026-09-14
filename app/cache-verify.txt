@@ -1,0 +1,7 @@
+并发 3 请求耗时 846ms
+species 数一致: true（10）
+cached 标记: fresh, fresh, fresh（期望仅一个 fresh，其余等同一结果）
+复请求 cached: true
+放生两次 probability: 20 / 20，第二次 cached: true
+status: liveMode=true ecoCacheCount=1 zhidaUsedToday=0
+磁盘缓存文件: true

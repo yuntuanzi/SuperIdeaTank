@@ -1,0 +1,29 @@
+node_modules/
+dist/
+*.log
+.env
+app/server/.env
+app/server/data/eco-cache.json
+app/server/data/ai-cache.json
+# 运行时缓存不入库；hot-snapshot.json 是可入库的真实热榜快照，不能加进这里
+app/server/data/hot-cache.json
+app/server/data/search-cache.json
+app/server/data/qa-cache.json
+# 凭证备份（含 Access Secret 明文，绝不入库）
+.env.bak*
+**/.env.bak*
+docs/dispatch/.codex-probe.txt
+docs/dispatch/*.log
+
+# 临时工作区：含部署 askpass（服务器密码明文）、打包产物、诊断转储，绝不入库
+_tmp/
+.workbuddy/
+# 本地调试转储与过程日志
+_server-log.txt
+_tmp_*
+**/*.bak*
+app/server/syntax-check.txt
+app/web/tsconfig.tsbuildinfo
+# 预构建原始素材含知乎回答正文与作者信息，属抓取数据不入库
+app/server/data/raw-tanks.json
+app/server/data/global-search-cache.json

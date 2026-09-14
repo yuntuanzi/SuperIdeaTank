@@ -1,0 +1,7 @@
+页面 HTTP 200: true
+新 bundle: h22b611d
+bundle 含 hero 类: true
+bundle 含深色缸类 tank-svg-wrap: true
+bundle 含 segmented: true
+status: liveMode=true ecoCacheCount=3
+hot: 8 条 (source=demo, warning)

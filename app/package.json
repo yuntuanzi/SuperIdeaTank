@@ -1,0 +1,12 @@
+{
+  "name": "opinion-evolution-tank",
+  "version": "1.0.0",
+  "private": true,
+  "description": "观点进化缸 · 知乎黑客松 2026 校园新锐季参赛作品",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "npm --prefix server run start"
+  }
+}

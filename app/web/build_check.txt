@@ -1,0 +1,9 @@
+﻿
+> tank-web@1.0.0 build
+> tsc -b && vite build
+
+src/lib/report.ts(8,51): error TS18047: 'b.votes' is possibly 'null'.
+src/lib/report.ts(8,61): error TS18047: 'a.votes' is possibly 'null'.
+src/lib/report.ts(9,32): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+src/lib/report.ts(47,23): error TS18047: 's.votes' is possibly 'null'.

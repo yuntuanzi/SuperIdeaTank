@@ -1,0 +1,4136 @@
+[
+  {
+    "k": "1853516810",
+    "ts": 1789403851035,
+    "data": {
+      "question": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+      "questionUrl": "https://www.zhihu.com/question/2082497943508973001",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851034,
+      "species": [
+        {
+          "id": "2082504115385585908",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "不需要任何公关，搭理他干嘛，他蛐蛐俞敏洪这么多年，俞敏洪搭理过他吗？包括董宇辉出走东方甄选，还辞退了那几个头部博主，罗永浩为了董宇辉的那些丈母娘能看他一眼在网上兴风作浪，可谓是上蹿下跳，俞敏洪回应过吗？ 他怕的是你不接茬，而不是怕你接茬。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082504115385585908",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "2082535188047963036",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "看看必胜客怎么做的，要给他当面道歉并送些披萨饼。罗永浩直接破防了，说自己穷疯了要讹饼吃。罗这种顺杆爬的人不能惯他，就得瞧不起他。要不他自己觉得是啥人物。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082535188047963036",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        },
+        {
+          "id": "2082508599243420274",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "这老东西搁这要优惠券呢 给他两张吧",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082508599243420274",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2082499645733918157",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "哎呀，上一次罗永浩说难吃的是西贝，西贝硬刚后的结局大家都已经看到了，这次野人先生可要好好应对这次的突发舆情了！\n这次罗永浩评价野人先生难吃，同时发出疑问这个品牌是怎么火起来的，还提前打了预防针，说这只是普通消费者评价。\n想当初罗永浩质疑西贝预制菜问题，西贝一开始选择强硬回击，创始人下场表态、扬言起诉，打算用法律手段自证清白，结果非但没有平息争议，反而点燃全网讨论，大量消费者扒出更多细节，舆论彻底反转，花费很长时间、付出巨大代价才慢慢降温。\n这件事留给所有消费品牌最重要的一课，当头部意见领袖抛出个人消费差评，最忌讳的就是情绪化对线、忙着证明对方说错了。\n其实大众关心的从来不是“谁赢了吵架”，而是",
+          "author": "HR蔷薇",
+          "badgeText": "企业人力资源管理师资格证持证人",
+          "authority": 4,
+          "votes": 440,
+          "enriched": true,
+          "comments": 265,
+          "editTime": 1789288288,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082499645733918157?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "昨晚刚吃，和普通冰琪淋没区别。",
+            "其实不用回应就行，上次贾老板不回应不会有后面那么大的波涛",
+            "最正确的应对方式就是装死"
+          ],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是“谁赢了吵架”，而是",
+                "weight": 2.6
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 15
+        },
+        {
+          "id": "2082504117768008049",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "野人先生性价比确实很低，不知道怎么火起来的。但是和西贝不一样的是，人家提供试吃服务，而且试吃给的很大方，不喜欢完全可以不买，买完了喷人家贵和难吃有点没道理的",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082504117768008049",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2082509317115328121",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "其实无非就两个方向—— 一是完全不理会。现在互联网消息那么多，谁还记得前几天发生过什么事情呢？只要不回应，那过几天大家也就忘记这件事了。 二是【只攻击不防守】。可以发一句“我们是中国企业，专门为中国消费者研发了合适的口味，日本人不喜欢，也很正常”，然后附上当年罗永浩某些言论的截图，这就可以了。最重要的是，不要自证！不要自证！不要自证！反正你罗永浩也不干净，你攻击我，我也攻击你，大家双输总好过单赢。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082509317115328121",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "故事叙事",
+          "confidence": 0.667,
+          "evidence": {
+            "stance": [
+              {
+                "term": "谁还",
+                "weight": 1.21
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 0.77
+              }
+            ],
+            "strategy": [
+              {
+                "term": "第一人称+过去时间",
+                "weight": 2.8
+              },
+              {
+                "term": "当年",
+                "weight": 2.2
+              },
+              {
+                "term": "记得",
+                "weight": 2.1
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2082541970950509533",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "野人先生跟必胜客学习，这次退款，给老罗三张满100减100优惠券结案。 这个byd又在要优惠券呢。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082541970950509533",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082535145970708842",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "野人冰激凌是啥？ 这不是罗太君白送的一波热度? 现在很多人都知道野人先生冰激凌了！ 我要是老板，我就发公告。 感谢罗永浩先生的建议，我们会持续关注用户反馈并做出调整。 同时赠与罗永浩先生白金VIP，持此vip到任何网店免费领取冰激凌。然后罗太君要是真去领了，就再发公告，说罗太君去年一年总共领了多少冰激凌。 白送的热度，不蹭不是傻吗？",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082535145970708842",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "情绪共鸣",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "！",
+                "weight": 0.7
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2082552761900611101",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "必胜客已经打过样了， 感谢罗先生的评价，我们致力于生产更健康，多口味的冰淇淋（千万不要辩解） 最后一个补偿：赠送给罗先生一个月的VIP卡，持卡可以享受八折优惠。 完美（当年必胜客这么操作，老罗当时就破防了）",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082552761900611101",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "故事叙事",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "第一人称+过去时间",
+                "weight": 2.8
+              },
+              {
+                "term": "当年",
+                "weight": 2.2
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2082504797593276436",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "希望野人先生老板看过三体。 ”不要回复，不要回复，不要回复。。。“ 另外，罗先生这次是认为，冰淇淋这个赛道，现做的没有预制的好吃？",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082504797593276436",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        },
+        {
+          "id": "-1897542462573393853",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "先说一个突破性的方式，就是使劲回应，甚至怼着罗老师来，越生气越好。这个需要品牌自己内在特别强大，同时有特别有网感的人来操盘。这可能直接就赚了三年投放的钱（当然也可能伤的很深）。\n野人先生，连老罗都敢怼，这才符合人设。\n——\n最正常的方式，是立刻开启一波活动，做「试吃」，本来野人先生门口就一直有试吃。然后再微博上投流，邀请大家都去线下试吃。\n对于老罗，回应：每个顾客都有自己的口味，尊重顾客表达自己意见的权利，以后还会推出更多口味的冰激凌，期待罗老师来品尝。\n这个舆情其实并不算太严重，因为确实冰激凌每个人都有自己的口味（我个人觉得野人先生还行），觉得好吃不好吃都是很主观的事。\n这和西贝有预制菜的巨",
+          "author": "马力",
+          "badgeText": "新知答主",
+          "authority": 4,
+          "votes": 21,
+          "enriched": true,
+          "comments": 12,
+          "editTime": 1789365190,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082743356858299202?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "抖机灵",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "（当然也可能伤的很深） / （我个人觉得野人先生还行）",
+                "weight": 2.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 13
+        },
+        {
+          "id": "784989020211383970",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "罗永浩是三体人，野人先生别当叶文洁——高手都懂\"万解\"\n这事其实特别适合用三体那个世界观来看，因为它天然就长那样。罗永浩是什么，是三体人，绝对的强势方，一句话就能把一个品牌送上热搜，这就是降维打击。野人先生就是地球，被点名了、坐标暴露了，被动得很。结果最逗的是评论区，网友集体刷\"不要回答不要回答不要回答\"，你看，大家是自发进入三体的，都知道沉默是保命的。这个梗之所以成立，就是因为强弱太不对等了——好不好吃本来是主观的，但从罗永浩嘴里说出来，它就变成了公共事件，这跟三体里\"技术爆炸\"一个道理，一方随口一发，另一方承受的是文明级别的冲击。\n那\"不要回答\"对不对呢，对，但只对了一半。现在野人先生客服",
+          "author": "一言超人",
+          "badgeText": "家庭心理指导师专业技能培训合格证书持证人",
+          "authority": 4,
+          "votes": 2,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789343572,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082729044831892475?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 所以 / 因为",
+                "weight": 4.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 12
+        },
+        {
+          "id": "-5522885875753321384",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "这并不是一个难题，野人先生最恰当的做法就是不做任何回应。\n前面西贝的教训已经足够吸取的了。\n我印象中跟罗永浩吵架的很少吵赢过。\n所以，野人先生冰激凌没法回应，如果辩论自己好吃的话，估计罗永浩还有更多的后手；如果承认自己冰激凌不好吃，那不是完蛋了吗？如果说虚心接受罗永浩的批评，努力改进，好像也不合适（不过或许它最后会这样回应，说感谢罗永浩，愿意倾听他的声音）。\n所以，碰到这事，最好啥也别回应。因为吃的东西，好不好吃是各人爱好，没有客观标准。\n不仅如此，我觉得罗永浩这次说不定还帮了野人先生，相当于给它做了一次广告。就像前段时间那个动画电影《牛来》吧？\n它的开局十分惨淡，2026年8月5日上映，首日",
+          "author": "Urvin",
+          "badgeText": "科研行业 经济学教授",
+          "authority": 4,
+          "votes": 145,
+          "enriched": true,
+          "comments": 65,
+          "editTime": 1789337018,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082711086927824745?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "引用权威",
+          "confidence": 0.14,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不是",
+                "weight": 0.99
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 0.77
+              }
+            ],
+            "strategy": [
+              {
+                "term": "《牛来》",
+                "weight": 3.6
+              },
+              {
+                "term": "教授",
+                "weight": 2.1
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 14
+        },
+        {
+          "id": "-7771287217057183736",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "本来就没什么需要特别回应的。\n罗永浩说的就是他自己的体验想法，看似引起了巨大讨论，但实际上没什么太坏的影响，因为本质上这只是一条针对店铺口味的 主观的 差评，这东西你去各种点评软件的差评区里随随便便就能找到找类似意思的，唯一的不同就是罗永浩的差评看到的人比较多。\n真要回复的话，在点评上怎么回复差评的就怎么回复罗永浩就完事了。\n最关键的是野人先生没有坑人，所以引不起大家的愤怒。\n他一在自己开的店里明码标价，不像那位雪糕故人一样把超高价冰淇淋混在超市冰柜和便宜冰淇淋一起卖当雪糕刺客。\n他二没有像某贝事件一样，老板被罗永浩用“预制菜”莫名其妙的戳中了命门子，然后在网上自爆，让大家发现我去你卖这么贵竟",
+          "author": "CS-PEK",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 1,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789384781,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082904766816968767?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 所以",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 11
+        },
+        {
+          "id": "-6339756591188466341",
+          "title": "罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？",
+          "excerpt": "对野人先生来说简直是重大利好，天降流量。\n下策是效仿西贝贾国龙对喷，激化负面舆情，不过黑红也是红，看营销团队怎么想了。\n中策是不予回应，自然冷静。但冷处理也意味着放过了这千载难逢的流量。\n上策是回应且积极回应，反蹭罗永浩的流量，借罗永浩宣传自家冰淇淋不同于其他家，是减糖减脂版，适宜男女老少全年龄段，打出差异化、强调健康。老罗只是吐槽不好吃，这是个人口味问题，算不得什么负面评价，没必要应激反应。\n就看野人先生的公关部门这波聪明不聪明了。",
+          "author": "Peggy的灵感罐头",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 0,
+          "enriched": true,
+          "comments": 1,
+          "editTime": 1789350282,
+          "url": "https://www.zhihu.com/question/2082497943508973001/answer/2082766720993867250?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "意味着",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        }
+      ],
+      "annotationWarning": "立场特征稀疏，多数物种落入同一类，标注可信度低",
+      "enrichment": {
+        "enriched": 6,
+        "total": 15,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 6,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「罗永浩称野人先生冰激凌很一般，野人先生该如何回应这场突发舆情？」的生态缸中采集到 15 个观点物种。优势立场是「中立」（13 个物种）；当前能量最高的是「数据论证」型回答（440 赞同）。本问题下最常见的生存策略是「未识别」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "4259163695",
+    "ts": 1789403851037,
+    "data": {
+      "question": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+      "questionUrl": "https://www.zhihu.com/question/2082250121257997440",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851037,
+      "species": [
+        {
+          "id": "2082426997507089437",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "HYROX是啥？ 广东话：嗨，落屎。 有一说一，HYROX这项运动，我一直觉得多少带点「现代人花钱买罪受」的意思。 几百上千块报名费交进去，跑8公里，中间再塞推雪橇、拉雪橇、波比跳、划船、农夫走、负重弓步这些东西。 最后成绩往朋友圈一晒，今天又战胜自己了。 但战胜自己战胜到大便失禁，还拖着跑了一个小时，这就有点过了… [图片] 更离谱的是主办方居然没把人拦下来。 你自己拉着跑，说到底是你自己的选择。 可排泄物已经弄到赛道和…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082426997507089437",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "故事叙事",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "第一人称+人物地点金额同现",
+                "weight": 2.6
+              },
+              {
+                "term": "朋友",
+                "weight": 1.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "2082425692671710232",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "正确做法：赛事举办方暂停比赛，同时将该名选手的参赛权限撤销。 因为你这种身体异状还远不同于其他病痛，是有非常巨大的外部性的。别的选手闻着你的诗味（视觉冲击就不谈了），还能正常发挥吗？ 或者考虑得再极端一点，有没有可能这是你的比赛策略之一？赛事方当然必须杜绝这种不正当手法出现的可能性。 至于说选手是否觉得尴尬或丢人。这个你就不需要帮老外考虑太多了，上网久的都知道，玩史对人家是家常便饭。而且她的社媒也…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082425692671710232",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        },
+        {
+          "id": "2082441212292755791",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "从一开始听说Hyrox就感觉有一股很浓的资本硬捧的味道，特别是看了谦哥在b站有一集访谈了相关从业人员的节目之后。 感觉是社交意义远远大于锻炼意义的一种比赛，即使没有人在器械上抹shi，密闭场馆里上百个人大汗淋漓，那味道也够受的。 各个视频平台评论里还有一堆硬捧“体育精神”的，真不懂这都是什么奇葩的三观。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082441212292755791",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2082529180214879450",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "屎诗级的比赛影像记录 [图片] 从个人观感完全没必要。完全可以中断比赛，让她清理身体，上个厕所再检查一下。如果没有问题，运动员可以补时重新完成比赛。 这比赛本身就是一个商业比赛，没必要这样搞，对其他运动员的影响怎么说？ 本地组委会一看就没有权利，不能随机应变，终止比赛。赛会规则也有待完善。最关键的是看媒体反应，还有判罚差异，这样一看就双标了。只能说洋人还是尊贵呀。 失禁零处罚：澳大利亚选手Joanna在第四站波比跳…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082529180214879450",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2082453615059456606",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "百分百的道德败坏，只顾自己的成绩而不管别人死活！ 什么win is win，吃粑粑也是一顿饱饭是吧？ 看HOROX，隔着屏幕都能闻到浓浓的汗味和腋臭。 这次属于是加料了。 看几次HYROX，你就不难发现这就就是一门生意。 那些上钩的，其实绝大部分跟那些被大米食用油鸡蛋洗脑的没啥区别。 对于主办方，既然是生意，临时终止是多大的损失啊！ 对于参与者而言，既然是处于被洗脑状态，不投诉不抱怨也是正常。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082453615059456606",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "情绪共鸣",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "！ / ！",
+                "weight": 1.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2082470731665913523",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "平时别人用完器械，我连汗都要擦干才敢用；这次 HYROX 的喷射战士直接把器械/场地弄成那样，其他选手居然没怎么投诉，组委会也不叫停，只能说这包容度我是真服啦。😄",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082470731665913523",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082491382069981746",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "我在红薯上屏蔽的话题和关键字，只有这个HYROX。 在健身房跑步的时候，旁边哪怕是个女生，也从来没有过啥香汗淋漓的感受，窜入鼻孔的，永远是最朴实的汗臭，男生女生都一样。所以这玩意项目设置的科不科学另说，这一屋的乌烟瘴气脚酸汗臭，我要去了估计得死那儿。 这东西的准入门槛就是钱，提供的就是发圈的情绪价值。如果有个规定说参加这个比赛不能发圈，不敢想会流失掉多少人。 所以你看，它并不是什么正而八经的体育比赛，参…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082491382069981746",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不能 / 不是",
+                "weight": 1.8
+              }
+            ],
+            "strategy": [
+              {
+                "term": "所以 / 所以",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2082561324782036566",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "其实HYROX这种商业赛世界各个城市，基本上每周都有比赛。何苦非要这一场较劲呢？咱们普通人都会觉得这场成绩不好，下次再努力呗。但乔娜姐就非要这么玩命～\n对运动员本身，我原本不想过多责备，因为裁判也没叫停她，她自己就想一直比完赛。\n本来想的是人有三急，这么尴尬的事，她一个女生不想过多指责她。但看她后续发了社媒“A win is a win”翻译成“赢就是赢”或者“赢了就行”？那副洋洋得意的模样，对于让后面运动员粘上她的排泄物一点歉意都没有。真的观感很差！\n再说一下对手阿莉莎，在乔娜窜了之后，第6圈跑步用时明显高于其他圈跑步\n两种可能性猜测，第一种让乔娜姐吓得（熏的）脑子懵了，数错了圈数多跑了一圈",
+          "author": "Ming Lee",
+          "badgeText": "知势榜影响力榜运动健身领域上榜答主",
+          "authority": 4,
+          "votes": 169,
+          "enriched": true,
+          "comments": 17,
+          "editTime": 1789380875,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082561324782036566?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "再说一下对手阿莉莎，在乔娜窜了之后，",
+                "weight": 2.4
+              },
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 11
+        },
+        {
+          "id": "2082490175616296424",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "我只好奇一件事，如果ta是个男的，民族汉，主办方会把ta拦下来吗",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082490175616296424",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2082533584682993289",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "这一泡屎把HYROX拉高到了不属于它的“高度”。 体育竞技出现失禁糗事， 不说都见过，至少也都听说过， 马拉松、举重、足球、竞走，都有过， 拉爆身体极限，出什么异常现象都不奇怪， 但在HYROX出现，就很奇怪了。 这活动本质是网红社交秀， 核心需求其实是“出片”“发微发薯发抖音”， 参与者最认真的，也只是跟自己比成绩， 反正都拿不到冠军，玩的就是重在参与， 相比其他体育竞技没有那么强的冠军光环， 所以鲜有拉爆自己的…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082533584682993289",
+          "featuredComments": [],
+          "stance": "解构",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "其实是",
+                "weight": 2.2
+              }
+            ],
+            "strategy": [
+              {
+                "term": "所以",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        },
+        {
+          "id": "5591363938389813984",
+          "title": "HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？",
+          "excerpt": "你花钱报名参赛，上场才发现脚下踩着别人的排泄物。主办方不反思场地安全，也不向受影响的选手道歉，反倒放话：要永久封禁那些网暴这名拉稀选手的人。\n9月12日，在HYROX北京站比赛中，澳大利亚世界纪录保持者Joanna Wietrzyk在赛程中途突发严重腹泻。\n但她并未退赛，而是继续完赛，导致赛道、雪橇垫和器械被大面积污染。随后，超过1000名参赛者不得不在被污染的场地上继续比赛，甚至有人因此险些滑倒。\n争议随之爆发：\n赛事规则明文规定，随地吐痰、洒落污物会罚时 2 分钟，国内普通选手轻微违规都会被罚时。 但这名外籍选手造成大面积生物污染，却全程零干预、零处罚，最后照常夺冠。\n赛后，她在社交媒体上",
+          "author": "慕容律师",
+          "badgeText": "律师执业证书持证人",
+          "authority": 4,
+          "votes": 1,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789398459,
+          "url": "https://www.zhihu.com/question/2082250121257997440/answer/2082968793014445446?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "随后，超过1000名参赛者不得不在被",
+                "weight": 2.4
+              },
+              {
+                "term": "因此",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        }
+      ],
+      "annotationWarning": null,
+      "enrichment": {
+        "enriched": 2,
+        "total": 11,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 2,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「HYROX 北京站比赛选手失禁仍完成比赛，比赛规则和卫生安全引争议，如何看待此事？」的生态缸中采集到 11 个观点物种。优势立场是「中立」（8 个物种）；当前能量最高的是「数据论证」型回答（169 赞同）。本问题下最常见的生存策略是「数据论证」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "2759175480",
+    "ts": 1789403851039,
+    "data": {
+      "question": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+      "questionUrl": "https://www.zhihu.com/question/2082370923865420719",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851039,
+      "species": [
+        {
+          "id": "2082407403228865607",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "说实话，这事儿看着都觉得心脏一紧，太狠了。不承担风险、怎么能有收获呢？复读的底线是必须要读自己喜欢的专业。这是这位同学的原话，是非常励志，也是他个人的奋斗目标。 你想想，去年已经拿到北大医学部的录取通知书了，换做绝大多数人，全家都得敲锣打鼓，谁舍得把这个机会扔了，那可是多少考生拼一辈子都摸不到的门槛。 [图片] 可陆远迪心里清楚，医学不是自己想要的方向，硬着头皮读下去，名校牌子再亮，日子也是煎熬，于是顶着全…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082407403228865607",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "情绪共鸣",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "熬",
+                "weight": 1.7
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2082454871702245551",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "这位天才两次考上北大，当然值得佩服。但假如另一个学生去年做了相反的决定，留在北大，把最初不那么喜欢的专业慢慢读出了滋味，我觉得也挺好。\n做出不同选择的两个人，完全可能是一样清醒的。\n一个人的成功经历，并不能当成所有人的标准答案，“既然他放弃北大医学部，最后能重新进北大图灵班，那么专业不满意的人，就都应该勇敢重来！”\n快闭嘴吧……那是真的北大，不是盐选小说里随随便便就能考上的清北……\n做出一个关乎人生的选择之前，一定要先弄清楚自己需要回答的，到底是哪道题。\n连续两年拿到足以进入北大的成绩，第二年进入图灵班，这是天才……北大计算机学院负责人在访谈中介绍，图灵班采用多轮招生，其中面向各省高考优秀考生",
+          "author": "佳人李大花",
+          "badgeText": "新知答主",
+          "authority": 4,
+          "votes": 92,
+          "enriched": true,
+          "comments": 22,
+          "editTime": 1789275931,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082454871702245551?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "[赞同]专业客观理性的分析，同样是清醒的可怕。但能帮许多人理清思路，指明自己应该抉择的方向。[赞][赞]",
+            "最简单的办法难道不是转专业？非的要退学再考？事情真实性待确定。"
+          ],
+          "stance": "中立",
+          "strategy": "情绪共鸣",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "！",
+                "weight": 0.7
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        },
+        {
+          "id": "2082439912138216869",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "05后的孩子和过去的孩子不一样了，他们更自我，不凑合，不将就。他们宁可花一年时间修弥补一个遗憾，也不愿意花四年乃至一辈子去消化一份凑合。\n 去年考上北大医学部放弃，复读后今年又考进北大图灵班，对于高考600分左右的同学来说难于上青天。但对于700分左右的学霸来说稀松平常，题目中的主人公浙江海宁中学陆远迪本来就有这个实力。去年高考只考了693分，不是因为能力不够700分，而是没发挥好。今年考了714分，也不是复读一年提高了21分，而是正常发挥了。\n 所以，陆远迪本来就有北大图灵班的实力，只不过去年小小失误了，今年终于得偿所愿，一点都不难。陆远迪一直很喜欢物理、数学、计算机这些学科，他不太喜欢医科",
+          "author": "夏庆",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 490,
+          "enriched": true,
+          "comments": 66,
+          "editTime": 1789272364,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082439912138216869?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "这个结论我是看不大懂的。900010年代一直有高分复读的，但是却不是各个都更好，咋这个案例就得出了05后更什么什么？！",
+            "既然他的底线是一定要选择自己喜欢的专业学校不限，那么他第一年为什么会被北大医学院录取？第一年他就可以报浙大复旦啊。",
+            "北大医学部和北大俩代码，不喜欢不要报呀[飙泪笑]"
+          ],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.667,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不是",
+                "weight": 0.99
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 0.77
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是因为能力不够700分，而是 / 不是复读一年提高了21分，而是",
+                "weight": 5.2
+              },
+              {
+                "term": "因为 / 所以",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 12
+        },
+        {
+          "id": "2082401274994210103",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "很明显，一年的时间让陆同学更成熟了，报志愿从“保学校”改成“保专业”。另外，陆同学通过自己的聪明才智把命运掌握在自己手里，干得漂亮！从题主给出的详细信息看，去年他的考虑还是“一直有一个清北梦”，所以填报志愿时用了“保学校”的策略，填了清华北大分数相对较低的专业，要“给自己高中三年一个交代”。这其实是好大一部分清北学生的想法。 而且，以这些高分学生的智商，理论上讲，除了清北的理科专业，其他的专业，…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082401274994210103",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "所以",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2082502171736777542",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "北大医学部的天坑专业，就 是小镇做题家的杀猪盘、斩杀线。巧了，我刚写完我一老哥被忽悠上北大护理专业的故事，就来了这新闻： 河南一高中为 50 名教师发 180 万高考奖励资金，对教师积极性和教育质量带来哪些影响？值得推广吗？ 北大这预防医学专业，对于希望靠做题获得体面生活的小镇做题家，妥妥杀猪盘了。 预防医学也好，护理专业也罢，到头来连 临床医师资格证书都考不了， 想做一个三线城市的社区医院医生都不可得。 @同工…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082502171736777542",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2082564771564492546",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "天才不愧是天才，不仅会学习，决策能力也是顶级。\n去年考上北大医学部放弃，2026 年又考进北大图灵班。\n只能说，这小子是真勇敢。\n北大医学部的录取通知书到手才一天，转头跟家里说“我去复读”。\n换我当年那个分数，我爹能把我腿打断。\n可你要真把这件事当成“任性”，就有点小看人家了。\n复读最难的地方，不是多刷一年题，是你手里已经攥着一张顶级牌，还得淡然的把它摔桌上重新发。\n693分上北大医学部，在绝大多数省份都是能吹一辈子的成绩，他退了，赌明年去本部读计算机——每一步都是深思熟虑。\n家里一百个反对，不是没理由，搁谁都得哆嗦。\n先说做到这点有多难。\n分数越高，复读容错率反而越低。\n你已经在693了，再",
+          "author": "夏夏回来了",
+          "badgeText": "新知答主",
+          "authority": 4,
+          "votes": 135,
+          "enriched": true,
+          "comments": 18,
+          "editTime": 1789302133,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082564771564492546?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "这种孩子毕业去美国给马斯克干 一年也是一个亿",
+            "计算机等他毕业的时候说不定已经被AI搞垮了，医学反而不会[捂脸]",
+            "[赞同]陆远迪的清醒和功课普通人可以借鉴学习，但他的选择不具复制性。[知乎益蜂][为爱发乎]"
+          ],
+          "stance": "中立",
+          "strategy": "故事叙事",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "我当年",
+                "weight": 5.4
+              },
+              {
+                "term": "第一人称+过去时间",
+                "weight": 2.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 11
+        },
+        {
+          "id": "2082472693694193828",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "他之前考上的是预防不是临床，预防本质就是生物，拿不了执业医师资格证，不能当医生。 现在从预防到了图灵班，从地上到天上好吧，一年时间很值。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082472693694193828",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082577130815238449",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "有人说“693分去复读，冲刺到714分拿全省第二，根本是编的，不可能！”我完全能理解这种质疑，毕竟谁听了都觉得太戏剧化，但我得逐条把账算清。 [图片] 先回击“分数涨分不合理”的质疑。大家普遍觉得700分上下已经触及天花板，再提分极其困难。没错，一般考生提分在10到20分，且伴随掉档风险。但陆远迪的提分之路根本不是盲目刷题。他2026年的硬账摆在这里：语文132、数学143、外语142，外加物理100、化学99、生物98，全科精准拔高。这…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082577130815238449",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "132、 / 143、 / 100、 / 99、",
+                "weight": 6
+              },
+              {
+                "term": "根本不是",
+                "weight": 2.4
+              },
+              {
+                "term": "第二，",
+                "weight": 2
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2082614163470402238",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "这男娃子最难得的是十八岁就知道北医不是北大、（中国学）医学不如学计算机 99%的人都会顶着“北大”光环接受医学部，他能舍出一年做出这种清醒至极的决策，脑子不是一般的好使 反而是考高分那些相比之下无足轻重了",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082614163470402238",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.48,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不是",
+                "weight": 0.99
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 0.77
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是一般的好使 反而是",
+                "weight": 2.6
+              },
+              {
+                "term": "这男娃子最难得的是十八岁就知道北医不",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2082552957866882291",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "一律捧的回答区很少见哦——看看其他关于复读的问题，都在将不确定性，有风险。但是，这个问题下全是在从各个方面找理由去捧人。 结果已经确定的问题，就不是问题，而是结论，没有讨论的必要。如果这位同学去年这个时间段在知乎上提问复读好不好，大概跟往常的复读问题一般：还是一堆人才在拉踩。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082552957866882291",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是问题，而是",
+                "weight": 2.6
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        },
+        {
+          "id": "-6034755625875845933",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "去年693，今年714，做到这点有多难？\n从一个普通学生过来人的角度看，作为高考700分级学生的主人公只要复读的一年正常学习，高考没有突发状况，成绩有所提升应该不是什么意外的事。\n所以，新闻说“意想不到的成绩”，我倒觉得应该是“意料之中”。\n至于敢于放弃北大，复读再考进自己的目标图灵班，这个过程要受承受住的压力，以及在付出努力后能有多少的收获，只能说“如人饮水，冷暖自知”。\n即便是家长，可能在最开始都不能完全理解和支持。\n而在主人公这个年龄，就敢于用一年的时间去兑现自己的理想，这点很不容易。但我也相信，一个敢于放弃的孩子，必然也敢于去争取。\n更重要的是，从主人公的讲述中看到他并不是说非清北不上",
+          "author": "沧浪之水",
+          "badgeText": "香港浸会大学 管理学硕士",
+          "authority": 4,
+          "votes": 6,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789289838,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082513199929243182?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.274,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不能 / 不是",
+                "weight": 1.485
+              }
+            ],
+            "strategy": [
+              {
+                "term": "从一个普通学生过来人的角度看，作为高",
+                "weight": 2.4
+              },
+              {
+                "term": "所以",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "4635995370642478026",
+          "title": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？",
+          "excerpt": "男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？\n这事儿我看完第一反应是想起打《黑暗之魂》那帮人。你被Boss按在地上摩擦了五十次，正常人的选择是换个简单难度，或者删游戏。但这孩子不一样，他去年693分已经拿到北大医学部的offer了，这相当于你已经通关了98%的流程，就差最后一刀砍在最终Boss身上，他偏不，他存档删了，重新开了一个新档，选了个地狱难度，然后又打了一遍。\n这个行为的本质，是一个人敢不敢为自己的认知买单。\n话说回来，你问我难不难？难个屁。真话是，这对于他来说可能是最简单的一条路。复读一年意味着什么？意味着他要在海宁市高级中学那栋楼里再",
+          "author": "知乎用户cbWThWZW",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 2,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789302285,
+          "url": "https://www.zhihu.com/question/2082370923865420719/answer/2082565407127376590?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "意味着 / 意味着",
+                "weight": 3
+              },
+              {
+                "term": "但这孩子不一样，他去年693分已经拿",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        }
+      ],
+      "annotationWarning": null,
+      "enrichment": {
+        "enriched": 5,
+        "total": 12,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 5,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「男生去年考上北大医学部放弃，2026 年又考进北大图灵班，做到这点有多难？怎样看待他的选择？」的生态缸中采集到 12 个观点物种。优势立场是「中立」（9 个物种）；当前能量最高的是「数据论证」型回答（490 赞同）。本问题下最常见的生存策略是「数据论证」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "2262451224",
+    "ts": 1789403851041,
+    "data": {
+      "question": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+      "questionUrl": "https://www.zhihu.com/question/528355615",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851041,
+      "species": [
+        {
+          "id": "2082392940350027113",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "中国人口为何从明末2亿人下降到清初1400万，是何原因？",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082392940350027113",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "中国人口为何从明末2亿人下降到清初1",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "2082497293828339562",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "自从宋剑仁被抓后，阿清的话题就屡屡上热榜。 我理解这是一种力量的展示，告诉小弟们，事情还在掌控种～ 事实上，阿清这个称呼都是晚清才有的。 至于阿清的历史，一个标点符号都不要信，什么人口，地域，都不要信。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082497293828339562",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        },
+        {
+          "id": "2082316348080898577",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "有些吹捧是很隐蔽的。比如这里一直被吹捧的所谓清朝人口是爆炸式增长，但是如果和同时期的世界人口数据比较才会发现，当时全世界都进入人口爆炸增长，清朝增速和当时世界平均水平差不多，甚至不如同期东亚的朝鲜。 1644年至清朝灭亡时，世界人口从约5亿增至约19亿，而同期的满清统治下中国人口约1.2 亿增至4亿，实际速度还稍低于全球平均水平。 而这一时期，东亚其他地方的人口增长更加迅速。同在东亚的朝鲜，在1647到1912期间，…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082316348080898577",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 1,
+          "evidence": {
+            "stance": [
+              {
+                "term": "吹捧 / 吹捧",
+                "weight": 2.64
+              },
+              {
+                "term": "差不多 / 甚至不如",
+                "weight": 1.76
+              },
+              {
+                "term": "所谓",
+                "weight": 0.99
+              }
+            ],
+            "strategy": [
+              {
+                "term": "平均 / 平均",
+                "weight": 3.6
+              },
+              {
+                "term": "1644年至清朝灭亡时，世界人口从约",
+                "weight": 2.4
+              },
+              {
+                "term": "1.",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2082516026546189900",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "不如分析一下中国人口从明末的两亿锐减到清初的8000万是什么原因。 [图片]",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082516026546189900",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不如分析一下中国人口从明末的两亿锐减",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2082544577899131128",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "随着西方伪史和满清伪史被揭露，这个问题应该先确定满清时期为什么人口是1400万，满清前的中国有多少人呢，然后为什么到满清入关后仅剩1400万，先问题干是不是，在回答为什么吧。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082544577899131128",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2081496060338480911",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "清朝人口出现爆炸式增长，和福建福州的一个老秀才有着很大的关系。这个老秀才叫陈振龙，1593年，51岁的陈振龙决定干一件大事。 陈振龙出生于万历年间，二十岁时中了秀才，但之后多次考取举人不第，就决定弃文从商，跟着亲戚下南洋，往来于福建和菲律宾之间做生意。 在菲律宾，陈振龙发现当地遍地都种着一种农作物，这种农作物不仅耐旱、高产、适应性强，而且生的熟的都可以吃。 这种农作物就是番薯。 当时菲律宾是西班牙的殖民地…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2081496060338480911",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082589912495290126",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "清据初期为啥只有1400万汉人呢，其余人呢？ 1639年，清军攻入赵州，2.5万人被杀害 1644年，多尔衮在北直隶三河、昌平、良乡等地进行的屠城，五千人被残杀。 1644年，多铎在陕西潼关地进行的屠城，七千人被残杀。 1645年，著名的“扬州十日”，单单以城内僧人收殓的尸体就超过了八十万具。 1645年，著名的“嘉定三屠”，清将李成栋三次下令对城中平民进行大屠杀，两个月内，民众牺牲2万余。 1645年，清军破昆山县，屠杀士民死难者…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082589912495290126",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "清据初期为啥只有1400万汉人呢，其 / 1645年，著名的“扬州十日”，单单",
+                "weight": 4.8
+              },
+              {
+                "term": "2.",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2082548718826534446",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "上了知乎我才知道清朝这么牛逼。 看来那几千个不平等条约不是清朝签的。 你的牛逼劲儿呢？ 太阳升起，是鸡叫出来的，对吧？",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082548718826534446",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2082551667761869933",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "主要原因有三，其一是统计口径原因，其二是生产力发展原因，其三是和平带来的人口恢复。\n明末的瘟疫，以及明清之交的大规模战争，确实导致大量人口死亡，以及众多人流离失所。但清代人口的下限，绝对远远超过1400万。\n清代初期的人口统计，是以丁为单位的，顺治八年（1651年）官方记载的“丁口”数为1063万，雍正十二年（1734年）为2735万，这些数字都是纳税成年男子数，而非全部人口。\n根据中国人口史的估算，明末的战争、瘟疫、灾荒，导致中国人口大约减少了4000万，但清初的人口规模应该也在1.5以左右，从1.5亿增长到4亿，人口固然增长了很多，但远远不如1400万增长到4亿那么夸张。\n和同时代世界其他",
+          "author": "ag獭",
+          "badgeText": "新知答主",
+          "authority": 4,
+          "votes": 58,
+          "enriched": true,
+          "comments": 4,
+          "editTime": 1789299050,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082551667761869933?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "应该把第三个因素放在第一个说明，清初并不是只有“2300万人口”，而是“2300万丁”，丁是赋役的组织单位，源于明代中后期政府所能掌控的法定成年男性人口，和明代所掌握的户口是相当的（1丁相当于3.5口）。\n顺便一提，我在很久之前就看到类似的题目，我留言和改题目后原题目也没火起来，结果2026年的今天我又看到类似的题目，究竟是谁执着于培养其他人爱大清的思想呢？我们这些做题人是不是一定程度上成为了他的帮凶？\n因此，一定要先批判题目的错误之处，然后再回答问题啊[吃瓜]"
+          ],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "但清代人口的下限，绝对远远超过140 / 清代初期的人口统计，是以丁为单位的，",
+                "weight": 4.8
+              },
+              {
+                "term": "统计 / 统计",
+                "weight": 4.8
+              },
+              {
+                "term": "1. / 1.",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 14
+        },
+        {
+          "id": "2082582369194791928",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "这难道不是伪史论？“明朝末年只有1400万人”，这不是伪到不能再伪了",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082582369194791928",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "这难道不是伪史论？",
+                "weight": 3.15
+              },
+              {
+                "term": "伪到不能再伪",
+                "weight": 1.76
+              },
+              {
+                "term": "不是 / 不是 / 不能",
+                "weight": 1.485
+              }
+            ],
+            "strategy": [
+              {
+                "term": "“明朝末年只有1400万人”，这不是",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        },
+        {
+          "id": "-5995825029671338950",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "中国基本置身事外，完全没有参与两次工业革命。1750年工业革命爆发时，中国来到了清朝的乾隆年间。由于人口规模大，中国的经济总量还占据世界第一的位置，当时相当于美国的19倍。而到了1900年，迅速下降到了相当于美国的70%。\n第二次工业革命是电力革命，西方的电力大规模使用了好多年，中国大地上还是黑漆漆地一片。直到清光绪八年(1882年)，英国人开办的上海电光公司所属的乍浦路电灯厂开始才开始发电，这是我国土地上正式发电的第一座电厂。上海的马路上第一次有了电灯，但此时清朝皇宫里还没有通电。\n直到‌1888年‌（清光绪十四年），李鸿章花费6000两白银，从国外购置了一套发电设备和电灯，作为贡品进献给慈",
+          "author": "Urvin",
+          "badgeText": "科研行业 经济学教授",
+          "authority": 4,
+          "votes": 13,
+          "enriched": true,
+          "comments": 18,
+          "editTime": 1789394989,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082747278431987103?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "由于人口规模大，中国的经济总量还占据 / 而到了1900年，迅速下降到了相当于",
+                "weight": 4.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 12
+        },
+        {
+          "id": "3694003045198355918",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "恰恰相反——清代几乎没有一项制度是为“多生人”而设计的。\n人口爆炸是这个政权为了解决自己的统治焦虑而层层施策后，意外滚出来的结果。\n一、统治者的根本动机：一个少数民族政权的“合法性焦虑”\n理解清代所有制度的钥匙，是记住满洲以百万级人口统治上亿汉人这一结构性事实。这个政权从入关第一天起就活在一种深层不安里：凭什么坐稳这个江山？它的答案不是靠人数，而是靠证明自己比明朝更能让百姓吃饱、活下去、不造反。\n明朝亡于流民、饥荒、农民起义，这是清朝亲眼所见、刻在骨子里的教训。\n于是清初统治者（尤其康熙）把“养民”“滋生人丁”直接当成政权合法性的 KPI。康熙“盛世滋生人丁，永不加赋”这道诏令的动机，表面是仁",
+          "author": "白特蛋丝从业者",
+          "badgeText": "互联网行业 从业人员",
+          "authority": 4,
+          "votes": 1,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789296451,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082539417672201153?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.439,
+          "evidence": {
+            "stance": [
+              {
+                "term": "恰恰相反",
+                "weight": 1.54
+              },
+              {
+                "term": "不是",
+                "weight": 0.495
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是靠人数，而是",
+                "weight": 2.6
+              },
+              {
+                "term": "一、",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        },
+        {
+          "id": "-1479810499117877929",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "因此1400万到4亿的倍数中，含有统计对象由人丁转为全体人口的巨大账面效应。\n赋税与统计制度改革是最直接的账面原因。康熙宣布滋生人丁永不加赋，雍正推行摊丁入亩，将丁税并入土地税。多生育不再直接增加丁税，百姓隐匿人口的动机减弱，地方登记也趋于完整。\n乾隆以后统计对象逐渐变为全体男女老幼。这一制度变化使官方人口数字迅速上升，但其中相当部分只是原先漏报人口进入统计。\n更本质的原因是物质基础。\n明末清初战乱饥荒瘟疫导致人口锐减，开头也说了，将近死掉9000万，甚至1亿人。\n康雍乾时期内地长期和平，社会秩序恢复，死亡率下降。\n农业方面大量垦荒，耕地增加，水利兴修，双季稻和稻麦复种推广，玉米番薯马铃薯等美",
+          "author": "牛斗之域",
+          "badgeText": "教师资格证持证人",
+          "authority": 4,
+          "votes": 28,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789310388,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082546485464404589?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "统计 / 统计 / 统计 / 统计",
+                "weight": 9.6
+              },
+              {
+                "term": "因此1400万到4亿的倍数中，含有统 / 明末清初战乱饥荒瘟疫导致人口锐减，开",
+                "weight": 6.3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 13
+        },
+        {
+          "id": "-591491369599972113",
+          "title": "清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？",
+          "excerpt": "因为明朝人口已接近4亿了！\n明末实际人口远高于官方纳税或登记人口，传统“六七千万～两亿”的估计偏低；综合人口增长率与纳税隐匿比例，三～四亿左右是合理区间。\n一、从明初基数与长期增长率推算\n首先，洪武二十六年，朱元璋为制定收税标准，对全国户口和土地进行普查登记。根据这次普查资料推算，明初人口约为7000万。这是讨论明末人口的起点。\n此后两百多年，明朝大体维持了全国性和平秩序，人口具备持续增长的条件。作为参照：北宋从太平兴国五年（980年）到宋徽宗大观三年（1109年），129年间人口年均增长率约为9.2‰，总人口达到约1.1亿；民国时期人口年均增长率约为8.2‰。若认为明朝的社会稳定程度至少不低",
+          "author": "李定国",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 12,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789355573,
+          "url": "https://www.zhihu.com/question/528355615/answer/2082766230117684476?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为明朝人口已接近4亿了 / 根据这次普查资料推算，明初人口约为7",
+                "weight": 6.3
+              },
+              {
+                "term": "一、 / 9. / 1. / 8.",
+                "weight": 6
+              },
+              {
+                "term": "首先，",
+                "weight": 2
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 11
+        }
+      ],
+      "annotationWarning": null,
+      "enrichment": {
+        "enriched": 5,
+        "total": 14,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 5,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「清朝人口为何从1400万迅速长到4亿？呈现爆发式增长，是何原因？」的生态缸中采集到 14 个观点物种。优势立场是「中立」（11 个物种）；当前能量最高的是「数据论证」型回答（58 赞同）。本问题下最常见的生存策略是「数据论证」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "2125468569",
+    "ts": 1789403851043,
+    "data": {
+      "question": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+      "questionUrl": "https://www.zhihu.com/question/2082326195320918583",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851043,
+      "species": [
+        {
+          "id": "2082389697129726884",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "这件事情要和Anthropic的举报和上市脚步越来越近、Google宣布已经实现RSI，OpenAI认为已经达到AGI等一系列新闻放在一起看。\n这几桩新闻的本质都指向同一件事实：“基础模型的训练要慢下来了。”\nANthropic的声称说的是：因为太危险了，所以得慢下来；Google的RSI以及OpenAI走的路数是，能力已经达到了，该慢下来了，Anthropic的举报则是，通过让中国政府干预的方式，让中国开源模型慢下来。\n因此所有的核心的核心都是“慢下来”，而且这是美国御三家的共识，特别是在Anthropic的天价IPO的前夕，如果上市之后的透明化把它降速的过程完美的体现出来，那这美国股市和整",
+          "author": "第欧根尼",
+          "badgeText": "互联网行业 COO",
+          "authority": 4,
+          "votes": 854,
+          "enriched": true,
+          "comments": 151,
+          "editTime": 1789281387,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082389697129726884?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "慢下来（x）钱烧得太快了（✓）",
+            "通过让中国政府干预的方式[开心][开心][开心]，要不这样，把fable5.1跟gpt6 astra开源了，然后大家一起停，我没意见[doge]",
+            "中国AI公司怎么可能听这些美国AI公司或政府呢？他们碰到困难了就来找中国AI的茬。现在他们又遇到问题了，又要命令中国公司听他们，凭什么呢？再说中国AI现在有自己发展计划，根本没有必要与美国AI公司协调的。"
+          ],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 所以 / 因此",
+                "weight": 4.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 12
+        },
+        {
+          "id": "2082401808958412329",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "如果你看过 Anthropic 这篇文章的最后一段，你就会发现他还是不变初心，最终迂回的目标还是限制 CN 发展。OpenAI 我倒是理解，就 怎么看 OpenAI 再曝光，更早的时候还攻击了 RubyGems 造成 5 月的大量垃圾包问题？ ，从抱抱脸开始两个多月到现在这件事就还没结束，出来表态很正常，从这个时间线就能看出来，OpenAI 确实是目前在训练过程里，暴露出来的模型的安全和对齐出现问题最多的。就像现在国外的大家都在说： 一直在说开源模…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082401808958412329",
+          "featuredComments": [],
+          "stance": "支持",
+          "strategy": "未识别",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "确实",
+                "weight": 1.8
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2082436259998331969",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "《三体》中设想了一种武器叫作『二向箔』，是一种『通过不可逆的空间压缩』抹除一个维度，从而实现对于黑暗森林中发出声音的猎手们的『降维打击』。 如果这个想法只停留在这个层面的话，那这个idea也只是一个有点新意的科幻想法罢了。但《三体》好就好在对于类似的科幻想法都没有停留在『提出』的层面。《三体》中还进一步设想，考虑道里『二向箔』的滥用和带来的结果。A 『降维打击』用的多了之后，被降维的空间将不再会是孤立…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082436259998331969",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "引用权威",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "《三体》 / 《三体》 / 《三体》",
+                "weight": 10.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2082437272797034141",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "看完全文觉得眼熟，这不就是为美国之前那套AI竞争战略服务吗。 该战略之前俺介绍过—— 美政府拟要求各方「不得同时加入美中的 AI 生态系统」，中方回应坚决反对搞选边站队，此举会有哪些影响？ 简单说是四条：在硬件选择上尽量排除中国；在AI监管上建立起一套美国为主的全球体系；在AI产业投资上按照美国部署来；在AI所需数据上只对美国AI企业全面开放。 阿莫代伊等这次提的建议，其实最后都落到这四条上了： 硬件选择排除中国还…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082437272797034141",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "抖机灵",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "荒诞建议",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2082381366050738693",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "其实，这件事背后还是那个老生常谈的话题：AI 安全。\n只不过这一次，Dario Amodei 的态度比以前更进一步。\n过去 Anthropic 呼吁的AI安全更多是在讲“AI 要发展，但安全措施也要跟上”，而这次 Dario 的核心观点已经变成了：\nAI 能力提升得太快了，安全研究开始有跟不上的风险，所以需要主动放慢前沿模型能力迭代的速度。\n注意，他说的并不是“停止 AI 发展”，而是 Pace the Frontier——给前沿 AI 限速。\n在这件事上，OpenAI CEO Sam Altman 和马斯克，是难得和 Dario 观点一致。\nOpenAI 其实上个月就已经采取过类似行动，他们",
+          "author": "小小将",
+          "badgeText": "新知答主",
+          "authority": 4,
+          "votes": 73,
+          "enriched": true,
+          "comments": 40,
+          "editTime": 1789275391,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082381366050738693?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "出最多事故的就是oa双出",
+            "现在千问3.8-27b。结合上国产trae， qoder，deepseek harness。编码都不错。你要说非和顶级体验比，那肯定比不上。\n\n那换个头来再想。如果以后7b的模型编码也能达到那样的效果。\n\n你觉得除了复杂的需求，谁还用那些产品？千亿市值，万亿市值，那不就土崩瓦解了吗？",
+            "gemini依旧缺席[尴尬]，看来北美豆包没有这种顾虑是吗"
+          ],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是“停止 AI 发展”，而是",
+                "weight": 2.6
+              },
+              {
+                "term": "所以",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 11
+        },
+        {
+          "id": "2082386234559803973",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "?马斯克你响应啥 你还dario right上了 grok不用放缓 你加速发展2027年都达不到astra的水平还放缓上了 向上碰瓷是吧",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082386234559803973",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082414951847745227",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "可以说实锤炒作了。因为open ai之前就打算年内不上市的新闻还挂在网上呢，那时候理由可是害怕巨头过于密集上市影响市场和估值，现在理由却是害怕影响人类利益，所以打算推迟。 西方ai企业特有的喜欢碰瓷监管营销，通过夸大自己的威胁来暗示已经接近通用人工智能。好在这次有东京大学的同行完全没有相同反应作为对照组，要不然还真不好一眼丁真。 为什么东京大学的梁子，月之暗面等人从来不炒作自己模型可能威胁社会稳定呢？因为…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082414951847745227",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 所以 / 因为",
+                "weight": 4.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2082466930590474468",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "更多新闻点击： 100个工程师被AI正面干掉！Meta新主管交底，底层只用了Markdown\n这篇长文中，Dario亲口承认，「递归自我改进（RSI）已经在全行业出现了」。\n更让人后背发凉的是，他预测未来6—12个月，AI Agent集群可能会接管整个互联网。\n面对这种脱缰的风险，Dario在文里直接掏出了一套动真格的「三步刹车法」：\n・第一步，开门迎客： 引入独立第三方常驻公司，拿到跟内部核心风控同等级的深度访问权限；\n・第二步，行业划线： 联合全美前沿AI巨头，一起画死能力红线、设立强制安全检查站；\n・第三步，全球落地： 把这套框架推向国际，彻底锁死不可控风险的蔓延。\n话音刚落，奥特曼就光",
+          "author": "新智元",
+          "badgeText": "人工智能话题下的优秀答主",
+          "authority": 4,
+          "votes": 13,
+          "enriched": true,
+          "comments": 4,
+          "editTime": 1789278806,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082466930590474468?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "GPT火爆的2023上半年，还记得一封长长的签名信………然后是该踩油门的还是踩油门……甚至原来没有AI业务的马斯克还主动加入……所以，现在搞这一出很讽刺和诡异"
+          ],
+          "stance": "中立",
+          "strategy": "故事叙事",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "更多新闻点击： / 开门迎客： / 行业划线： / 全球落地：",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        },
+        {
+          "id": "2082457888023490569",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "内心真实 os: 我靠，deepseek ，grok 这些竞争对手怎么做到成本越低，模型反而不输我的头牌模型的，我都头部得赶紧整个人工智能大模型协会统一下行业标准。好先把我的算力投资成本收回来再说！！！！！！",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082457888023490569",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "情绪共鸣",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "！ / ！ / ！ / ！",
+                "weight": 2.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2082559506546943627",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "你搞错了，达里奥确实说了放缓迭代速度，但奥特曼并没有说，奥特曼只说了同意有独立的评估员获得和员工一样的权限。 我之前就说过，很快各路小丑和竞争对手都会跳出来阻止AI发展。奥特曼没有选择跟这些人硬刚，反而说了一句似是而非的话，只赞同了一个无关痛痒的观点。意思已经很明白了：安全问题确实很重要，但我们不会停下来。 现在大家都能看出来，openai已经非常接近胜利了。达里奥和马斯克的宣言相当于下战书，接下来会有大…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082559506546943627",
+          "featuredComments": [],
+          "stance": "支持",
+          "strategy": "未识别",
+          "confidence": 0.667,
+          "evidence": {
+            "stance": [
+              {
+                "term": "确实 / 确实",
+                "weight": 3.6
+              },
+              {
+                "term": "同意",
+                "weight": 2.4
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        },
+        {
+          "id": "-6256184008774202481",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "先把最容易让人误判的一点挑明：这次喊\"减速\"，不是良心发现，是技术现实逼出来的。\n三年前那波\"暂停训练AI\"的联名潮，达里奥·阿莫代伊（Anthropic CEO）压根没接茬。他当时的公开判断是\"时机不成熟\"。一个当时拒绝签联名的人，现在自己写了3800字长文呼吁\"必须放慢AI模型能力提升的速度\"——同一件事，同一个人，态度一百八十度转弯。\n所以真正的问题不是\"他说得对不对\"，而是：他看到了什么，让他改主意的？\n答案藏在他文章里的一个技术词：RSI，递归自我改进。\n---\n一、RSI：让他从\"不接茬\"变成\"主动喊停\"的那个词\nRSI（Recursive Self-Improvement）说白了",
+          "author": "月夜",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 2,
+          "enriched": true,
+          "comments": 1,
+          "editTime": 1789388985,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082923691051061274?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "支持",
+          "strategy": "数据论证",
+          "confidence": 0.342,
+          "evidence": {
+            "stance": [
+              {
+                "term": "说得对",
+                "weight": 2.6
+              },
+              {
+                "term": "拒绝",
+                "weight": 1.1
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是\"他说得对不对\"，而是",
+                "weight": 2.6
+              },
+              {
+                "term": "一个当时拒绝签联名的人，现在自己写了",
+                "weight": 2.4
+              },
+              {
+                "term": "真正的问题不是",
+                "weight": 2.4
+              },
+              {
+                "term": "一、",
+                "weight": 1.5
+              },
+              {
+                "term": "所以",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "-6942272992229467591",
+          "title": "Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？",
+          "excerpt": "最近一众AI领军人物呼吁放缓AI能力迭代速度之后，全球AI板块的股价在9月13日集体下跌。\n起因是，9月12日，Anthropic的CEO阿莫代发表一篇名为《我们必须为前沿AI踩刹车》的文章，并且该文章得到了马斯克和奥尔特曼的支持，引发美国舆论轩然大波。\n阿莫代、奥尔特曼、马斯克，这三个在美国可以说是AI三巨头，各自互相都看不顺眼，彼此经常有争吵，不过这三人这次罕见的达成了一致，背后还是有一些不同寻常的信息。\n首先强调一下，阿莫代这人对我国有一些乱七八糟的敌意，这是一个意识形态入脑的人。而且这个人在AI发展历史上，谈不上一个多有道德感的人，这也让Anthropic，有“A除”的外号。\n所以，阿",
+          "author": "星话大白",
+          "badgeText": "金融等 2 个话题下的优秀答主",
+          "authority": 4,
+          "votes": 2,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789402255,
+          "url": "https://www.zhihu.com/question/2082326195320918583/answer/2082984711916348703?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "引用权威",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "《我们必须为前沿AI踩刹车》",
+                "weight": 3.6
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        }
+      ],
+      "annotationWarning": null,
+      "enrichment": {
+        "enriched": 5,
+        "total": 12,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 5,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「Anthropic 掌门人呼吁放缓 AI 模型迭代，马斯克、奥尔特曼响应，此举背后出于哪些考量？」的生态缸中采集到 12 个观点物种。优势立场是「中立」（9 个物种）；当前能量最高的是「数据论证」型回答（854 赞同）。本问题下最常见的生存策略是「数据论证」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "2653567048",
+    "ts": 1789403851044,
+    "data": {
+      "question": "职场上为什么有能力的人爬不上去？",
+      "questionUrl": "https://www.zhihu.com/question/2058854687621882538",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851044,
+      "species": [
+        {
+          "id": "2082429133095704538",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "职场专业方面的能者上，确实是靠专业实力，靠努力程度，靠努力成果，这些实打实能看得见的能力走到头部。\n但在仕途的路径上，能者上，则是另一个评价规则，这个规则与能力并无多大关联。\n①自上而下的评价能者，首先考虑的是可控性，自上而下的可控性，是团队组织管理有效推进的基础。\n有能力的人，能力超过可控范围，就意味着不适合规则可控性的人选，爬不上去的原因源头就在于此。\n②自上而下的评价能者，其次考虑的是团队运行稳定性，毕竟有工作能力的人，在其能力擅长的位置上，是不可或缺的。\n经常有职场人掉进这个职场巨坑。\n当你在自己有能力的方面，做得越优秀，越出色，也意味着你和工作绑定越紧密，工作离不开你，那么爬上去的机",
+          "author": "离了歪斜的鸟窝儿",
+          "badgeText": "二级建造师资格证持证人",
+          "authority": 4,
+          "votes": 96,
+          "enriched": true,
+          "comments": 38,
+          "editTime": 1789354638,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2082429133095704538?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "不是所有人都会爬，越有能力的越不会[捂脸]",
+            "顺其自然吧，没有升职不代表能力差",
+            "只有说适合自己的就是最好的"
+          ],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "意味着 / 意味着",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 12
+        },
+        {
+          "id": "2074767347542398845",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "为什么有能力的人爬不上去？ 因为你所感叹的能力强，很可能是自我感动，你所以为的怀才不遇，本质上是可用度不足。 职场里大量被困在底层的人，都踩了同一个致命误区：在“活干得好”与“值得而且应该被提拔\"之间划了个等号 但在职场上，业务能力，只是最基本的门槛、立身底线，它只能保证你不被辞退，绝对支撑不了你升职。 很多人看不懂现状。觉得自己专业碾压同事，做事细致高效，几乎不出错，身边一些看起来资质平平、技术一…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2074767347542398845",
+          "featuredComments": [],
+          "stance": "解构",
+          "strategy": "数据论证",
+          "confidence": 0.133,
+          "evidence": {
+            "stance": [
+              {
+                "term": "本质上是",
+                "weight": 2.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 所以",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "2058898790778660714",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "最近，我对十多年工作过程中接触到的人，对他们通过分类，做了个类似画像的分析，我看明白了一个真相—— 大佬看重的，还真不是一个人的具体的做事能力。以前一直不理解，现在我想说一个做事能力强的人爬不上去很正常。 为什么这么说呢？ 因为我发现职场其实层级是有个金字塔结构的，分为三层： [图片] 最下面的一层都是些工作能力不错的人。他们往往在一线或者中层以下，干着具体的活，是他们撑起了整个业务跟公司的日常运转。 你再看…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2058898790778660714",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        },
+        {
+          "id": "2065051285343172319",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "专业能力强只是晋升的入场券，想要真正爬上去，需要从多维度着手准备。 很多人误认为只要做的好，晋升指日可待，想法是很好的可逻辑思路是错误的。 管理学中“彼得原理”指出：在层级管理中，员工往往因当前职位表现优异而不断提拔，直到到达一个“无法胜任”的地位，并停留在那里。因此，想要得到提拔，理清楚背后的综合复杂因素，而非被单一因素所误导。 第一、陷入管理陷阱。基层是最好的执行者，并不见得能做好管理工作。 业…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2065051285343172319",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "第一、",
+                "weight": 3.5
+              },
+              {
+                "term": "因此",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2059536842836404135",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "这个题主的问题非常有意思，它的基本前提是 职场上有能力的人都应当爬上去。 可是现实吗？ 当然不现实。 [图片] 职场上哪一个人没有能力？ 能力有各种方面的能力，但是真正处在上层的是屈指可数的，越往上层人数越小，比例越少。 如果人人都站在金字塔的顶尖，那就不叫金字塔了。 中国古人讲，人的成功需要天时、地利和人和，这三个方面都应当同时具备，才有可能顺风顺水。 其中，天和地显然不是人能够控制的。人唯一能够控制的就是“…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2059536842836404135",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2061730148404162589",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "这个问题的预设前提并不是那么稳当！涉及几个问题，比如：什么叫做有能力？能力和所谓的“爬上去”可不可以画等号？成王败寇到底有多少水分？ 先看第一道问题，能力这个东西，其实并不是那么容易下结论的！不同的人当然会有不同的看法，而且能力有无、高低往往难以避免不被结果所影响。 什么意思呢？有人会认为，能说会道就是能力强的表现，但有的人认为那是夸夸其谈！也有人会说会办事才是能力强的表现，但是也会有人觉得那样的…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2061730148404162589",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "情绪共鸣",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "所谓的",
+                "weight": 1.98
+              },
+              {
+                "term": "不是 / 不是",
+                "weight": 0.99
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 0.77
+              }
+            ],
+            "strategy": [
+              {
+                "term": "！ / ！ / ！",
+                "weight": 2.1
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2059570331803706782",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "如果是我个人在一个地方长期呆着没有提升，排除我自己躺平这个原因外，我只归结成一点：八字不合； 如果是发生在别人身上，就只能说：时也、命也； 我个人还是蛮相信人际关系中磁场这种东西的，虽然看不见摸不着也很玄幻，但我是真觉得它是存在的，有的圈子即使你付出再多努力也融不进去，但是有的圈子则很轻易就能混熟。 仔细拆分出来大约就是那个群体里的人的性格、三观、爱好等各种特征比较适合我这个个体，而有的群体的特征…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2059570331803706782",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082374199344219813",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "能力是职场上最不值得一提的优点。 很多领导愿意用能力平庸的人，却不用能力强的人。不是领导瞎，而是 提拔这件事，本质上是资源倾斜和风险控制。领导选人，先看忠诚，再看安心、放心。 你能力再强，如果不是“他的人”、不可控、不靠谱、不让他放心，他宁愿用能力一般但能驾驭的人。 1、你是谁的人？领导提拔下属说白了就是一种资源的倾斜。 只有你是他的人，他才会把资源倾向于你。不然把你拔上来了，你一转身成了他的竞争对手…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2082374199344219813",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.296,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不靠谱",
+                "weight": 1.65
+              },
+              {
+                "term": "不是 / 不是",
+                "weight": 0.99
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 0.77
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是领导瞎，而是",
+                "weight": 2.6
+              },
+              {
+                "term": "1、",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2079136994463048861",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "要从两个层面来看： 第一层面：职场的目的是要钱还是要级别？ 有人说没有级别哪里有钱？ 这不对，因为实现目标的途径不同，要钱主要依靠完成更多的任务，就像古代打仗拿头领军功，封万户侯。但是要级别是靠忠诚可靠和站位。虽然级别高的人也可以分到较高的报酬，但是钱和钱是不一样的，高级职位还能带来名望。 但是可能迎来的结果也不同，只考虑挣钱基本没有声望，别人眼中可能就是暴发户，有了级别别人会羡慕尊重，可一旦公司不…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2079136994463048861",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2076091827480949656",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "就有能力的人，你得看是哪方面的能力，个人打打独斗很强，没有协调能力或者说没有领导能力，那就爬不上去。 在基层岗位拼个人干活；但升到管理岗后，考核的不再是你自己做多快，而是能不能带动一群人产出结果。 就比方说很多高手单兵极强，但不擅长协调、分配任务，只会蒙头干活。 遇到问题矛盾，不会化解矛盾，不会开导下属；凡事习惯自己上手，看不惯别人做事慢。 这种人适合当骨干、技术大拿，并不适合做管理者。提拔上去反而…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2076091827480949656",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        },
+        {
+          "id": "1680713470832203199",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "因为职场遵循残酷的丛林法则，管理层从来不只是看业务。业务只是敲门砖，它能让你你上牌桌，却不能保证你往上走。\n在系统里，权力的博弈才是核心，业务解决的是“能不能干活”，而权力博弈解决的是“能不能在组织里立足、获得信任、调配资源。但其对于中国式教育来说，这是很多人的短板，能不能在斗争中存活下去都是个问题。\n而能爬上去的是需要不断克服很多心理障碍的。比如一个心软的人就很容易管不住人，奖惩不分，也就是应了那句古话，“慈不掌兵”，想要往上爬就要克服二三十年身上的惯性。比如一个能力强但个性也很强的人，很容易和领导起冲突，这个时候如何能游刃有余处理二者关系也是个技术活。比如一些可能脑子清醒的人，能看清底层逻",
+          "author": "知行安止",
+          "badgeText": "植物病理学硕士",
+          "authority": 4,
+          "votes": 11,
+          "enriched": true,
+          "comments": 3,
+          "editTime": 1789367302,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2082602959347640150?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "[感谢][感谢][感谢][赞同][赞同][赞同]"
+          ],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不能 / 不能 / 不能 / 不能",
+                "weight": 1.98
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 11
+        },
+        {
+          "id": "311782929037551283",
+          "title": "职场上为什么有能力的人爬不上去？",
+          "excerpt": "职场走到中后期，很多人都会陷入一种很深的自我困惑：\n我不偷懒、不摸鱼，执行力在线，扛事、抗压、落地能力都不差，干活永远靠谱稳定。\n\n可偏偏，升职轮不到我、核心资源轮不到我、高层视野永远挤不进去。\n\n很多人把问题归结为：自己不够圆滑、不会拍马屁、不够卷、运气不好。\n其实根本不是。\n\n前段时间和一位长期做企业组织架构的老师深聊，我才彻底想通：\n大多数人职场上不去，不是输在“能力”，而是输在完全看不懂高层的选拔逻辑。\n甚至可以说，大家从一开始，就把问题问错了。\n\n1. 高层选拔，不是能力竞赛\n基层、中层看能力、看执行力、看结果。\n但高层选人，看的根本不是“谁更能干”。\n真正能被组织抬上去的人，几乎都",
+          "author": "李察·月歌",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 10,
+          "enriched": true,
+          "comments": 12,
+          "editTime": 1789019411,
+          "url": "https://www.zhihu.com/question/2058854687621882538/answer/2081378949893039884?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [
+            "要挂上那一串利益关系，不然单打独斗很难出头。",
+            "得被系统接纳才行[赞]",
+            "确实看不懂，因为看懂太累了。"
+          ],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "根本不是 / 根本不是",
+                "weight": 4.8
+              },
+              {
+                "term": "不是输在“能力”，而是",
+                "weight": 2.6
+              },
+              {
+                "term": "1.",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        }
+      ],
+      "annotationWarning": null,
+      "enrichment": {
+        "enriched": 3,
+        "total": 12,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 3,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「职场上为什么有能力的人爬不上去？」的生态缸中采集到 12 个观点物种。优势立场是「中立」（8 个物种）；当前能量最高的是「数据论证」型回答（96 赞同）。本问题下最常见的生存策略是「数据论证」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "2498273903",
+    "ts": 1789403851046,
+    "data": {
+      "question": "预感将被裁员且能力不足，该主动辞职吗？",
+      "questionUrl": "https://www.zhihu.com/question/2081988407358767777",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851046,
+      "species": [
+        {
+          "id": "2082504508857496445",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "这种情况没有必要主动的辞职。一般都是等待观望，做好准备就可以了。 [图片] 首先，这种情况比较普遍以前企业这样的行为比较少，近年来变得多了起来。跟现在的经济发展环境，还有企业的制度变化有关系。 现在企业更倾向于用减少人员开支的这个方式来节约企业的成本，特别的明显。 有的企业会有固定的时间来进行这方面的筛选。 我之前在过的一些公司都有过这种情况。当时是因为和他关系比较好的同事，是在名单里面了，后面他也跟公司去…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082504508857496445",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "首先，",
+                "weight": 2
+              },
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        },
+        {
+          "id": "2082449355970294499",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "你的预感是错的，不多学习干啥？抓紧时间，别怕，天还没塌，苟道也是道，且行且看。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082449355970294499",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "2082022009907700240",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "有一句话说的好：你以为你以为的就是你以为的？万一裁员名单里没有你呢？下面我用数学推导逻辑推导一下可能真的裁不到你。 如果“世界就是一个草台班子”是一个真命题，意味着具体到你们公司裁员这项工作，可能会出现这种情况：公司及领导本意是处理掉影响团队整体效率的人。由于草台定理，最终事与愿违，一些原本该裁者未裁，而一些不该裁的却被裁，甚至可能裁员裁到了大动脉和大腿式人物。题主自认能力有限，理论上是潜在被裁…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082022009907700240",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "意味着",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        },
+        {
+          "id": "2082182888104129086",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "首先问一句，公司裁员会赔偿吗？如果会赔偿，为啥要主动辞职呢？ 第二，即使公司不会赔偿，你有更好的出路吗？如果没有找好下家，为啥要主动辞职？ 公司又没赶走你，有必要那么主动吗？又不是因为工资低，又不是因为领导不好，也不是同事难相处，不懂你为啥要主动辞职？",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082182888104129086",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.374,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不是 / 不是",
+                "weight": 2.7
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 因为",
+                "weight": 3
+              },
+              {
+                "term": "第二，",
+                "weight": 2
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2081992798383891730",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "可以骑驴找马，但是没必要自己辞职。 现在的大环境不好，你如果运气好，又找到一个靠谱的工作可以主动离职，但是概率很低。 公司辞退员工，需要给经济补偿，还可以领失业金，能够有几个月的缓冲期，让你经济压力小很多。 千万不要意气用事，千万不要和钱过不去。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2081992798383891730",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "未识别",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2082103054518826191",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "若是终将分离，那么主不主动辞职已经不是劳资关系里的关键了。 梳理当下的技能，了解当下的人才市场，制定可能被裁后的应对方案。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082103054518826191",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2082072502927470814",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "老实说，听说公司可能要裁自己，只是可能，第一反应是赶紧跑路，我真心觉得这么干挺蠢的。 裁员会不会轮到你头上，都还说不准。 无非就两种结局： 第一种，真裁到你了。 公司按规定给 N 或者 N+1 补偿，办完手续，你还能去申领失业金。相当于拿钱给你一段缓冲期找下家，稳赚不亏。 第二种，最后根本没裁你。 那你自己主动提离职，啥补偿都没有，失业金也领不到，平白无故丢掉一份工作，这不纯纯亏大发了？ 所以，先稳住，该上班…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082072502927470814",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "情绪共鸣",
+          "confidence": 0.141,
+          "evidence": {
+            "stance": [
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "真心觉得",
+                "weight": 2.6
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2081989443481879218",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "自己离职没有离职补偿金，也不能领取失业金，还是被裁对员工有利。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2081989443481879218",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2082003420232402203",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "不管从哪个角度来说，在裁员前离职是最不理智的。 从经济角度看，裁员是有经济补偿的，但是主动离职没有，你主动离职不但拿不到补偿金甚至还不能领取失业保险。 从个人能力角度看，你觉得你不行就想离职，那么去了下一家就一定行吗，哪怕把这里当做一个实习的机会也是好的。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082003420232402203",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "未识别",
+          "confidence": 0.667,
+          "evidence": {
+            "stance": [
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              },
+              {
+                "term": "不能",
+                "weight": 0.9
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2082118527385866553",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "没必要，公司裁员是要支付经济赔偿的。当然家里不差钱的忽略。 不然，就一如既往认真工作，积极提升自己的能力，同时积极规划未来：找新工作，赔偿金的用途：最好用在可长期获得收益的投资上。 现在这个阶段千万不要主动离职，除非找到了新的合适的工作。 [图片] [图片] [图片]",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082118527385866553",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "未识别",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "没必要",
+                "weight": 3
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        },
+        {
+          "id": "7619740708856716931",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "对于你的想法，心理学上有个很贴切的概念叫防御性放弃。\n为了避免一个可能到来的、让自己难堪的坏结果，干脆提前退场，把我被淘汰了重新定义为“是我自己选择的”。\n你还没有被裁，但大脑已经反复预演了那个场景，每想一次，焦虑就加重一层。\n如果主动辞职，会让你觉得至少这个决定是我做的，而不是被动地被人安排。这是一种自尊的自我保护机制。\n但问题是，这并不是个确凿的结果，而是你的担忧。\n还没挨打，先替对方把刀递过去，还搭上了应得的赔偿和缓冲时间。\n人的内耗，大多数来自于悬而未决。\n不确定走还是留，不确定什么时候走，不确定走了之后怎么办。游移不定是最消耗能量的状态。\n要停止内耗，不妨假定最坏的结果已经发生了，然",
+          "author": "允执厥中",
+          "badgeText": "企业人力资源管理师资格证持证人",
+          "authority": 4,
+          "votes": 27,
+          "enriched": true,
+          "comments": 14,
+          "editTime": 1789353558,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082780461185627576?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不是",
+                "weight": 1.8
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是个确凿的结果，而是",
+                "weight": 2.6
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 14
+        },
+        {
+          "id": "22530519157321424",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "《五灯会元》有句“作贼人心虚“了解一下。\n实在不了解，那换成后来演变的做贼心虚，应该就没什么问题了吧？\n这个提问最有意思的地方是哪里？\n1、公司要裁员，这个消息是还没被证实的。\n2、领导表态要处理某些影响效率的人，但没有指名道姓，也没任何动作。\n3、你这个员工对号入座了，开始思考要不要主动离职。\n说实话，如果平时的工作很努力，也没做亏心事，这种情况下真被裁了，你也大可说自己对这份工作已经燃尽。\n已经竭尽全力还是被裁，只能说是无奈。\n问题是，人家裁员名单都还没出来，你就找了一堆理由认定自己可能会被裁，开始思考主动离职这件事。\n在外人看来，这不是心虚是什么？\n01\n其实，这个提问本身就不符合逻辑。",
+          "author": "童先生",
+          "badgeText": "新知答主",
+          "authority": 4,
+          "votes": 1,
+          "enriched": true,
+          "comments": 2,
+          "editTime": 1789344607,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082742919727953318?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              },
+              {
+                "term": "不是",
+                "weight": 0.9
+              }
+            ],
+            "strategy": [
+              {
+                "term": "1、 / 2、 / 3、",
+                "weight": 4.5
+              },
+              {
+                "term": "2、领导表态要处理某些影响效率的人，",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 12
+        },
+        {
+          "id": "8321404122936336322",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "那你就去主动辞了吧，体面点，千万不要学别人赖着不走等着被裁然后拿n+1和失业金。",
+          "author": "德莱文",
+          "badgeText": "",
+          "authority": 4,
+          "votes": 1,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789345318,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082745902557615701?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 11
+        },
+        {
+          "id": "5607582211147874430",
+          "title": "预感将被裁员且能力不足，该主动辞职吗？",
+          "excerpt": "有自知之明是好的，但把过度担忧的精力放在提升个人能力上会更划算，目标是保证自己业绩不要倒数，提升与领导的信任关系，增强职业竞争力；如果自己不认可现有的组织，赶紧骑驴找马，未雨绸缪才是正道。\n主动辞职是下下策，轻易不要走这条路，否则出现失业就很被动，失业的日子不好受，除非你已经有了更好的选择和出路不想浪费时间。\n人生没有回头路，慎重走好每一步。",
+          "author": "珠海拾贝",
+          "badgeText": "西安交通大学 管理学硕士",
+          "authority": 4,
+          "votes": 2,
+          "enriched": true,
+          "comments": 0,
+          "editTime": 1789381062,
+          "url": "https://www.zhihu.com/question/2081988407358767777/answer/2082895824237995596?utm_medium=openapi_platform&utm_source=cf621feb3f2d",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 13
+        }
+      ],
+      "annotationWarning": "多数回答的说服方式未能识别，策略标注仅供参考",
+      "enrichment": {
+        "enriched": 4,
+        "total": 14,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 4,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「预感将被裁员且能力不足，该主动辞职吗？」的生态缸中采集到 14 个观点物种。优势立场是「中立」（7 个物种）；当前能量最高的是「数据论证」型回答（27 赞同）。本问题下最常见的生存策略是「未识别」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "3436309438",
+    "ts": 1789403851047,
+    "data": {
+      "question": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+      "questionUrl": "https://www.zhihu.com/question/663413512",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851047,
+      "species": [
+        {
+          "id": "2037535186225717554",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "我是酒店行业从业者，你所说的“酒店标间两张床的价格反而会低于一张床的大床房的价格”并不成立，至少并不是常态，不信我拿数据给你看，以我所在城市的五星级酒店为例： 我们选定城市、星级、入住时间离店时间以及住店人数： [图片] 然后我们随意找一家五星级酒店（温泉酒店）的客房： 这是商务标准间的价格： [图片] 这是商务大床间的价格： [图片] 你看，前置条件是一样的，区别就是床型不一样，房价同样的都是不含早415元/间夜，含早481元/间夜； …",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/2037535186225717554",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "故事叙事",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "星级酒店为例： / 以及住店人数： / 的客房： / 标准间的价格：",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        },
+        {
+          "id": "2039794858785760270",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "说明酒店双床滞销，双床没有大床好卖。这种情况确实存在，但是比较少见。因为即便酒店的大床订完了，双床可以把双床拼成大床来买，来保证双床的价格。尽管，其实双床的成本和大床差不了多少。 但是，正常情况下，双床确实要比大床贵。当然前提是，同一种房型。比如，豪华双床比豪华大床贵，标准双床比标准大床贵。 [图片] 双床拼的大床是很多客户吐槽的点。尤其超过500价格，可人往床底下一看，居然是两张床拼凑在一起的，很容易投诉。…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/2039794858785760270",
+          "featuredComments": [],
+          "stance": "支持",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "确实 / 确实",
+                "weight": 1.98
+              }
+            ],
+            "strategy": [
+              {
+                "term": "说明 / 因为",
+                "weight": 3
+              },
+              {
+                "term": "尤其超过500价格，可人往床底下一看",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "2023510470439519434",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "我自己的感觉是，虽然大床房和双床房两个房型看起来一样，但是还是有配置差异的。 我经常在订酒店的时候，因为图双床房便宜就优先定双床房，但是实际入住的时候对房间不满意，然后找到前台说我要调换房间，这个时候90%的情况都是给我升级一间大床房，走进去之后体感最明显的其实不是那个床，而是阳光更好、通风更好、楼层更高、景观更好、更安静。 如果是酒店的原因可能就是免费的，比如楼外有噪音，床铺潮湿等；如果房间也没啥…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/2023510470439519434",
+          "featuredComments": [],
+          "stance": "支持",
+          "strategy": "数据论证",
+          "confidence": 0.278,
+          "evidence": {
+            "stance": [
+              {
+                "term": "更好 / 更好 / 更好",
+                "weight": 2.97
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是那个床，而是",
+                "weight": 2.6
+              },
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        },
+        {
+          "id": "2082464783555736265",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "我们借这个问题，聊下酒店的 定价逻辑。告诉大家怎么订到便宜又好的房。 核心策略是：线上提前3天以上订房，通常一定比线下或电话订房要便宜。但是电话订房很多不收预定费。同一家酒店的房间价格，要看三个核心指标—— 第一个指标是面积。这个是固定不动的房间指标。 高档酒店的装修成本其实大于普通住宅，因为它的选材标准、老化翻修、安全标准都比较高。 同时，大部分酒店都在核心地块，商业面积的土地成本也高于普通的住宅。 …",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/2082464783555736265",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2041605351338947025",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "因为对于酒店集团高级会员，订大床基础房型，可以免费升级套房。如果订双床房，是无法升级套房的。对于酒店来说，大床房的单房运营成本比双床房高。 酒店双床房的数量也比大床房多，房型配置更灵活，在大床房被卖完的情况下，可以把两张单人床拼成特大床。 双床房较低的价格还可以吸引客流，提升入住率。对于独自出行的客人，双床和大床的差别并不大，会偏向与便宜点的双床。差旅和会议住客，双人间的价格可以卡差旅预算上，比如…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/2041605351338947025",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为",
+                "weight": 1.5
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "3583624708",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "不一定的，正常是高于大床房的价的，如果这段时间这个房型比较少人订，就会价格设置第一些，争取多卖出去，不要空房，如果这个双床是这段时间热销的，就会贵很多",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/3583624708",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2025131527730734501",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "供求关系决定的。 卖得更好的房型贵一点，而不是简单从房间实际费用来确定售价。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/2025131527730734501",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082475646639461180",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "知乎老规矩，先问是不是，再问为什么。 题主的问题在绝大部分情况下并不成立： [图片] 前几天刚订过汕头的亚朵，同房型明显 双床更贵 ▲这其实也很好理解，酒店位于汕头旅游核心区， 年轻人结伴出行多于家庭出行，双床更受欢迎。按照这个逻辑，旅游度假区的度假酒店，大床房应该比双床更贵；商务需求集中的地区，双床又会比大床更贵。 那么事实如何呢？ [图片] 把地址切换回宁波，我找了个最经典的旅游度假区（东钱湖），以两家国际连锁度假酒…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/2082475646639461180",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "抖机灵",
+          "confidence": 0.265,
+          "evidence": {
+            "stance": [
+              {
+                "term": "分情况",
+                "weight": 2.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "（东钱湖）",
+                "weight": 1.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "3594368820",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？谢邀。 一、首先我先问大家一个问题，在什么样的情况下你会选择住标间（两张床）呢？原因无非如下： 1，参加会议，主办方预算有限，要求住标间拼住； 2，公司安排两个人出差，住标间省钱； 3，和同性朋友/家人去旅游，住标间可以聊天也能省钱。 从上面可以看出，住标间的优点是：省钱。缺点是：没有隐私。我从事酒店行业15年，做的都是商务…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/3594368820",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "故事叙事",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "原因无非如下： / 标间的优点是： / 缺点是：",
+                "weight": 3
+              },
+              {
+                "term": "朋友",
+                "weight": 1.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "3590375623",
+          "title": "为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？",
+          "excerpt": "跟客人的类别有关系 也跟酒店物理房量有关系 一就是大床好卖 卖的多 剩的少所以贵 二是大床本来就少 所以贵…还有一些情侣酒店 度假酒店 因为标间客人少 所以便宜 都是供求关系",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/663413512/answer/3590375623",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "数据论证",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "所以 / 所以 / 因为 / 所以",
+                "weight": 6
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        }
+      ],
+      "annotationWarning": "立场特征稀疏，多数物种落入同一类，标注可信度低",
+      "enrichment": {
+        "enriched": 0,
+        "total": 10,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 0,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「为什么酒店标间两张床的价格反而会低于一张床的大床房的价格，这背后的定价逻辑是什么？」的生态缸中采集到 10 个观点物种。优势立场是「中立」（8 个物种）；当前能量最高的是「故事叙事」型回答（热序 赞同）。本问题下最常见的生存策略是「数据论证」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  },
+  {
+    "k": "2655499354",
+    "ts": 1789403851048,
+    "data": {
+      "question": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+      "questionUrl": "https://www.zhihu.com/question/2081927215936189203",
+      "source": "live",
+      "dataSource": "question_answers",
+      "createdAt": 1789403851048,
+      "species": [
+        {
+          "id": "2082434710819567145",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "对我来说根本没有争议和影响。 我看勇哥，而且只看切片。是为了观察不同阶级不同群体的行为活动的。这次工作17小时，也的确丰富了我的观察内容。 看勇哥之前，在我总是狭隘地纠结到底发达不发达的界限在哪里。是GDP、收入、社保、军事、恩格尔系数、诺贝尔奖、教育普及、医疗、机场、铁路、高速公路、互联网、电子产品还是奢侈品？为什么这些越来越多但是人却越来越痛苦？ 看了勇哥后我想通了，这些并不是人真正追求的。绝大多数…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082434710819567145",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "未识别",
+          "confidence": 0.427,
+          "evidence": {
+            "stance": [
+              {
+                "term": "没有争议",
+                "weight": 5
+              }
+            ],
+            "strategy": []
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 10
+        },
+        {
+          "id": "2082028542343361657",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "勇哥：几点营业？ 老板：中午11点。 勇哥：干到凌晨四点？ 老板：对。 勇哥：大家不休息啊？ 老板：基本上不休息。 勇哥：这些员工是自家人还是请的？ 老板：请的人。 勇哥：他们给你从11点干到晚上四点啊？ 老板：对的。 勇哥：…我的天哪，17个小时啊。 老板：对的。 勇哥：持续多久？ 老板：两三个月。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082028542343361657",
+          "featuredComments": [],
+          "stance": "中立",
+          "strategy": "故事叙事",
+          "confidence": 0,
+          "evidence": {
+            "stance": [
+              {
+                "term": "特征不足",
+                "weight": 0
+              }
+            ],
+            "strategy": [
+              {
+                "term": "勇哥： / 老板： / 勇哥： / 老板：",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 9
+        },
+        {
+          "id": "2082477505647227925",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "很难平息争议，因为勇哥所谓翻车，不在于这个火锅店有没有员工真的能一天干够17个小时。 甚至也不在于勇哥知道之后有什么反应。 而是在于，有人在弹幕说了周扒皮之后，他非要跑去跟人家对线，情绪之下，说了一些话，这些话如果真的上纲上线去死追着不放，那勇哥理论上的这个车，就是肯定翻定了。 因为他在跟网友的弹幕对线里，就已经完全表达自己的立场了，他的立场就是完完全全站在创业开店的老板这边。 而且他的看法一直都是， …",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082477505647227925",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "很难",
+                "weight": 2.6
+              },
+              {
+                "term": "所谓",
+                "weight": 1.8
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 因为",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 8
+        },
+        {
+          "id": "2082136226325386830",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "卖惨宣传翻车了又开始装白莲花，说网友不顾事实指责他们，怎么不问问他们这样宣传居心何在。 店家并不无辜首先，猫头鹰线下采访的这个真实工作时间我是认可的，确实符合餐饮行业的惯例。 但是，实际工作时间和他连麦时说自己店员工作十七个小时并不冲突，连麦视频切片那么多，大家都可以去看。他是不是说自己员工工作十七个小时，看看他们抖音是不是宣传过自己工作十七个小时。 这两件事并不冲突，并不是他们实际工作没有十七个…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082136226325386830",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不是 / 不是",
+                "weight": 2.7
+              },
+              {
+                "term": "卖惨宣传翻车",
+                "weight": 2.6
+              },
+              {
+                "term": "并不无辜",
+                "weight": 1.8
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "首先，",
+                "weight": 2
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 7
+        },
+        {
+          "id": "2082020281925879792",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "不太能，他主要爆在后续的berber站专场怼人等操作上，让很多人回过味来再去拿起放大镜不带滤镜的去审视他以前的一些言论。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082020281925879792",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "抖机灵",
+          "confidence": 0.333,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不太能",
+                "weight": 3
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不太能，他主要爆在后续的berber站专场怼人等操作上，让很",
+                "weight": 2.4
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 6
+        },
+        {
+          "id": "2082456139657224848",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "不能。 勇哥的问题是得罪网友，不是没贯彻执行劳动法。这个店又不是他开的，店到底是几班倒对他挨骂这件事都没啥关系。直播间网友在不知道是两班倒的时候，骂的也是千里之外、形象模糊的店主，知道了以后，这个店主的形象依然是模糊的，对于模糊的人，那最多是不骂了呗，还能怎么样。 但勇哥是一直在那的，实打实的靶子，而且表现还不好，跟网友抬杠，这才是他挨骂的根源。 [图片] [图片] 我觉得用阶级观念去划分这件事有点太放大了，这种主播…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082456139657224848",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "引用权威",
+          "confidence": 0.095,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不能 / 不是 / 不是",
+                "weight": 5.7
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "劳动法",
+                "weight": 2.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 5
+        },
+        {
+          "id": "2082408837806609332",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "没意义。 这是转移重点。 现在矛盾根本不是工作时间长，而是勇为了维护工作时间长而谩骂观众，所体现出来的对压榨剥削的赞赏和维护的态度。 就像是彭勇案的重点不是他有没有撞人，而是法官因为有善意行为所以判他撞人了。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082408837806609332",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 1,
+          "evidence": {
+            "stance": [
+              {
+                "term": "没意义",
+                "weight": 3
+              },
+              {
+                "term": "不是 / 不是",
+                "weight": 1.8
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "不是工作时间长，而是 / 不是他有没有撞人，而是",
+                "weight": 5.2
+              },
+              {
+                "term": "根本不是 / 重点不是",
+                "weight": 4.8
+              },
+              {
+                "term": "因为 / 所以",
+                "weight": 3
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 4
+        },
+        {
+          "id": "2082249527592067744",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "一开始我就怀疑是弄错了。 单人工作17个小时，意味着一天睡眠时间只有7个小时，而且还是在干了17个小时工作的前提下。 我说实话，富士康都没这么狠，就开始搞无保护蹦极大赛了。 他这17小时连轴转还没人蹦极，让老板招聘到雅利安超人了说是。",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082249527592067744",
+          "featuredComments": [],
+          "stance": "反讽",
+          "strategy": "抖机灵",
+          "confidence": 0.443,
+          "evidence": {
+            "stance": [
+              {
+                "term": "了说是",
+                "weight": 2.6
+              },
+              {
+                "term": "都没这么狠",
+                "weight": 2.2
+              }
+            ],
+            "strategy": [
+              {
+                "term": "了说是",
+                "weight": 4.4
+              },
+              {
+                "term": "雅利安 / 超人了",
+                "weight": 4
+              },
+              {
+                "term": "都没这么狠",
+                "weight": 2.2
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 3
+        },
+        {
+          "id": "2082449987699488606",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "这次真的可以先抛开事实不谈了（笑死）。 因为牢勇的问题不是这个17小时是不是有换班的，而是他怒怼网友这个事。 其实他和网友对线的时候也说过有肯定有排班的，人不可能一天干17个小时之类的话。 但是他核心输出的观点是你管人家怎么用员工呢？人家员工自己都同意你们网友在这里操什么心？ [图片] 这个直接就是真实伤害了，很多打工人（甚至可以说大多数打工人）就是处于 “这个B工作我TM早就不想干了但是因为各种原因不得不咬着牙干下…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082449987699488606",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "数据论证",
+          "confidence": 0.048,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不是 / 不可能",
+                "weight": 2.7
+              },
+              {
+                "term": "否定副词密度>3/百字",
+                "weight": 1.4
+              }
+            ],
+            "strategy": [
+              {
+                "term": "因为 / 因为",
+                "weight": 3
+              },
+              {
+                "term": "不是这个17小时是不是有换班的，而是",
+                "weight": 2.6
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 2
+        },
+        {
+          "id": "2082229680711660450",
+          "title": "勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？",
+          "excerpt": "有些人的生活常识匮乏到了什么样的程度？但凡你中午的饭局时间一长拖到两三点钟，你就能看见一堆的服务员，还有后厨的工作人员找一张圆桌坐在那玩手机。一般的饭店能连轴转17个小时，从头忙到尾，即使不是一般吃饭的高峰期照样能忙起来，这样的店根本就不可能亏钱，除非毛利率为0。只不过勇哥撞到政治正确的枪口上了罢了，但人家的立场本来就站在饭馆老板的立场上，之前遇到快招的，勇哥都建议老板把员工都裁掉，对于员工来说，…",
+          "author": "知乎用户",
+          "badgeText": "",
+          "authority": 1,
+          "votes": null,
+          "enriched": false,
+          "comments": 0,
+          "editTime": 0,
+          "url": "https://www.zhihu.com/question/2081927215936189203/answer/2082229680711660450",
+          "featuredComments": [],
+          "stance": "反对",
+          "strategy": "抖机灵",
+          "confidence": 0.286,
+          "evidence": {
+            "stance": [
+              {
+                "term": "不是 / 不可能",
+                "weight": 1.8
+              },
+              {
+                "term": "有些人的生活常识匮乏到了什么样的程度？",
+                "weight": 1.5
+              }
+            ],
+            "strategy": [
+              {
+                "term": "荒诞建议",
+                "weight": 2.4
+              },
+              {
+                "term": "什么样的程度",
+                "weight": 1.8
+              }
+            ]
+          },
+          "annotationSource": "local-heuristic",
+          "summary": "",
+          "heatRank": 1
+        }
+      ],
+      "annotationWarning": null,
+      "enrichment": {
+        "enriched": 0,
+        "total": 10,
+        "fromAnswers": 10,
+        "fromGlobalSearch": 0,
+        "strategy": "merge-two-samples"
+      },
+      "narrative": "「勇哥餐饮事件，博主线下调查发现火锅店实为两班倒，并非员工单人工作17小时，这一调查结果能否平息争议？」的生态缸中采集到 10 个观点物种。优势立场是「反对」（7 个物种）；当前能量最高的是「未识别」型回答（热序 赞同）。本问题下最常见的生存策略是「数据论证」——在这个生态位，它比其他策略更容易存活。",
+      "aiNarrative": null,
+      "aiNarrativeSource": null,
+      "aiFactions": null,
+      "aiDominant": null
+    }
+  }
+]

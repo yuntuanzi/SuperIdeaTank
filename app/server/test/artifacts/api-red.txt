@@ -1,0 +1,30 @@
+✖ 路由列出永久预构建缸，无凭证也可复用；演示放生使用本地草稿标签 (151.1804ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 213.5253
+
+✖ failing tests:
+
+test at app\server\test\api.test.mjs:12:1
+✖ 路由列出永久预构建缸，无凭证也可复用；演示放生使用本地草稿标签 (151.1804ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  404 !== 200
+  
+      at TestContext.<anonymous> (file:///C:/Users/bokily/dev/super-eco/app/server/test/api.test.mjs:38:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 404,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+

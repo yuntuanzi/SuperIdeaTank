@@ -1,0 +1,13 @@
+✔ loadEcoCache loads fresh eco cache and permanent prebuilt tanks from injected dataDir (6.9256ms)
+✔ persistEcoCacheEntry can write to an injected dataDir without touching real cache files (2.651ms)
+✔ prebuildTanks checks quota before each uncached tank and stops when quota is insufficient (6.4175ms)
+✔ zhidaChat sends both quota and chat HTTP through injected fetchImpl (1.0392ms)
+✔ fetchQuota accepts injected fetchImpl instead of touching the network (1.3127ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 86.6922
