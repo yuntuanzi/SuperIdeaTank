@@ -119,8 +119,11 @@ function useTweenNodes(target: VizNode[]): VizNode[] {
       const k = ease(t);
       setRendered(
         target.map((n) => {
-          const f = from.get(n.id)!;
-          return { ...n, x: f.x + (n.x - f.x) * k, y: f.y + (n.y - f.y) * k, r: f.r + (n.r - f.r) * k };
+          const f = from.get(n.id) ?? n;
+          const fx = Number.isFinite(f.x) ? f.x : n.x;
+          const fy = Number.isFinite(f.y) ? f.y : n.y;
+          const fr = Number.isFinite(f.r) ? f.r : 0;
+          return { ...n, x: fx + (n.x - fx) * k, y: fy + (n.y - fy) * k, r: fr + (n.r - fr) * k };
         }),
       );
       if (t < 1) {
@@ -158,16 +161,21 @@ export function Tank({
     [species, all, params],
   );
 
-  const tweened = useTweenNodes(nodes);
+  const safeNodes = useMemo(() => nodes.filter((n) => Number.isFinite(n.x) && Number.isFinite(n.y) && Number.isFinite(n.r)), [nodes]);
+  const tweened = useTweenNodes(safeNodes);
 
   // 连线端点改从补间后的节点取坐标，否则节点在动、连线跳变，两者会脱节
   const resolved = useMemo(
     () =>
-      links.map((l) => ({
-        kind: l.kind,
-        a: tweened.find((n) => n.id === (typeof l.source === 'object' ? l.source.id : l.source))!,
-        b: tweened.find((n) => n.id === (typeof l.target === 'object' ? l.target.id : l.target))!,
-      })),
+      links
+        .map((l) => {
+          const sourceId = typeof l.source === 'object' ? l.source?.id : l.source;
+          const targetId = typeof l.target === 'object' ? l.target?.id : l.target;
+          const a = tweened.find((n) => n.id === sourceId);
+          const b = tweened.find((n) => n.id === targetId);
+          return a && b ? { kind: l.kind, a, b } : null;
+        })
+        .filter((l): l is { kind: 'camp' | 'rival'; a: VizNode; b: VizNode } => Boolean(l)), 
     [links, tweened],
   );
 
