@@ -35,6 +35,7 @@ export default function App() {
   const [oauth, setOauth] = useState<OAuthStatus | null>(null);
   // 授权回执带成功/失败态：图标语义不同（对勾 vs 警告），不能共用一个图标
   const [oauthNotice, setOauthNotice] = useState<{ text: string; ok: boolean } | null>(null);
+  const [authModal, setAuthModal] = useState(false);
   // 构建过程：building = 正在构建的问题；buildEvents = 服务端推来的过程事件流
   const [building, setBuilding] = useState<{ question: string } | null>(null);
   const [buildEvents, setBuildEvents] = useState<BuildEvent[]>([]);
@@ -154,7 +155,11 @@ export default function App() {
         finishBuild(ac);
         // 主动取消不是错误，不该弹红条
         if ((e as Error).name === 'AbortError') return;
-        setError((e as Error).message);
+        if ((e as Error).message.includes('授权登录知乎账号') || (e as Error).message.includes('LOGIN_REQUIRED')) {
+          setAuthModal(true);
+        } else {
+          setError((e as Error).message);
+        }
       }
     },
     [finishBuild],
@@ -216,6 +221,19 @@ export default function App() {
         <div className={`oauth-notice ${oauthNotice.ok ? '' : 'is-err'}`}>
           {oauthNotice.ok ? <Icon.Check size={13} /> : <Icon.AlertTriangle size={13} />}
           {oauthNotice.text}
+        </div>
+      )}
+      {authModal && (
+        <div className="auth-modal-backdrop" role="presentation" onClick={() => setAuthModal(false)}>
+          <div className="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" onClick={(e) => e.stopPropagation()}>
+            <div className="auth-modal-mark"><Icon.User size={18} /></div>
+            <h2 id="auth-title">请先授权知乎账号</h2>
+            <p>AI 生态缸需要使用你的知乎授权身份，用于访问公开回答并生成专属解说。授权不会把账号凭证交给前端。</p>
+            <div className="auth-modal-actions">
+              <button className="backlink" onClick={() => setAuthModal(false)}>稍后再说</button>
+              <button className="oauth-btn" onClick={() => { window.location.href = '/api/oauth/start'; }}>授权登录知乎</button>
+            </div>
+          </div>
         </div>
       )}
       {(error || restoreError) && (
