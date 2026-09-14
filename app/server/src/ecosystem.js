@@ -334,10 +334,8 @@ function distributionWarning(items) {
     return Math.max(...counts.values()) / items.length >= 0.8;
   };
   if (!items.length) return null;
-  if (collapsed('stance')) return '立场特征稀疏，多数物种落入同一类，标注可信度低';
   const unrecognized = items.filter((item) => item.strategy === '未识别').length;
   if (unrecognized / items.length >= 0.5) return '多数回答的说服方式未能识别，策略标注仅供参考';
-  if (collapsed('strategy')) return '策略特征稀疏，多数物种落入同一类，标注可信度低';
   return null;
 }
 

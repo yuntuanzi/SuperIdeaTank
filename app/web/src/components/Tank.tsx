@@ -224,11 +224,18 @@ export function Tank({
         <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={`${question} 的观点生态缸`}>
           <title>观点生态缸</title>
           <defs>
-            <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
-              <circle cx="1.2" cy="1.2" r="1.2" fill="rgba(148, 178, 216, 0.13)" />
+            <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+              <circle cx="1.4" cy="1.4" r="1.2" fill="rgba(148, 185, 235, 0.12)" />
             </pattern>
           </defs>
           <rect width={W} height={H} fill="url(#dots)" />
+          {/* 中心极坐标刻度与十字视准线（低对比微光，科研观测舱视界） */}
+          <g opacity={0.35} pointerEvents="none">
+            <circle cx={W / 2} cy={H / 2} r={120} fill="none" stroke="rgba(148, 185, 235, 0.12)" strokeWidth={1} strokeDasharray="4 6" />
+            <circle cx={W / 2} cy={H / 2} r={230} fill="none" stroke="rgba(148, 185, 235, 0.08)" strokeWidth={1} strokeDasharray="3 8" />
+            <line x1={W / 2 - 28} y1={H / 2} x2={W / 2 + 28} y2={H / 2} stroke="rgba(148, 185, 235, 0.25)" strokeWidth={1} />
+            <line x1={W / 2} y1={H / 2 - 28} x2={W / 2} y2={H / 2 + 28} stroke="rgba(148, 185, 235, 0.25)" strokeWidth={1} />
+          </g>
 
           {resolved.map((l, i) => {
             const a = l.a;

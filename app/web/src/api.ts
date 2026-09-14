@@ -101,9 +101,6 @@ export const api = {
     }
     throw new Error(failure || '构建未返回结果');
   },
-  narrative: (question: string, species: Species[]) =>
-    fetch('/api/ecosystem/narrative', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, species }) }).then((r) => json<any>(r)),
-  narrativeHistory: () => fetch('/api/ecosystem/narrative/history').then((r) => json<{ items: any[]; remaining: number }>(r)),
   release: (question: string, draft: string, species: Species[]) =>
     fetch('/api/release', {
       method: 'POST',

@@ -6,6 +6,7 @@ import type { HotMeta } from './components/HotBoard';
 import { Tank } from './components/Tank';
 import { Workspace } from './components/Workspace';
 import { BuildProgress } from './components/BuildProgress';
+import { SplashIntro } from './components/SplashIntro';
 import { Icon } from './components/Icon';
 import { classifyQuestion, isExplanationType } from './lib/questionType';
 
@@ -34,32 +35,54 @@ export default function App() {
   // 授权回执带成功/失败态：图标语义不同（对勾 vs 警告），不能共用一个图标
   const [oauthNotice, setOauthNotice] = useState<{ text: string; ok: boolean } | null>(null);
   const [authModal, setAuthModal] = useState(false);
+  const [quotaModal, setQuotaModal] = useState(false);
   // 构建过程：building = 正在构建的问题；buildEvents = 服务端推来的过程事件流
   const [building, setBuilding] = useState<{ question: string } | null>(null);
   const [buildEvents, setBuildEvents] = useState<BuildEvent[]>([]);
   const [showProgress, setShowProgress] = useState(false);
+  const [showSplash, setShowSplash] = useState(() => {
+    // 仅在首次打开首页（board 视图且本会话未播放过）展示开屏动画
+    return new URLSearchParams(window.location.search).get('view') !== 'tank' && !sessionStorage.getItem('splash-played');
+  });
   // 同一时刻只允许一条构建：连点不同问题必须中止上一条，否则并行烧 token
   const abortRef = useRef<AbortController | null>(null);
   const progressTimerRef = useRef<number | null>(null);
+  const oauthRef = useRef<OAuthStatus | null>(null);
+  oauthRef.current = oauth;
 
   useEffect(() => {
     api.status().then(setStatus).catch(() => setStatus({ liveMode: false }));
     api.oauthStatus().then((nextOauth) => {
       setOauth(nextOauth);
-      const onHome = new URLSearchParams(window.location.search).get('view') !== 'tank';
-      if (onHome && !nextOauth.authorized && !sessionStorage.getItem('home-auth-prompted')) {
-        sessionStorage.setItem('home-auth-prompted', '1');
+      if (!nextOauth.authorized) {
         setAuthModal(true);
+      } else {
+        setAuthModal(false);
       }
-    }).catch(() => setOauth(null));
-    // 通过 URL 恢复当前生态缸：服务端优先命中生态缓存，不重复消耗 AI/知乎额度。
+    }).catch(() => {
+      setOauth(null);
+      setAuthModal(true);
+    });
+    // 通过 URL 恢复当前生态缸：强制需要登录态，未登录直接拦截
     const params = new URLSearchParams(window.location.search);
     const savedQuestion = params.get('question');
     if (params.get('view') === 'tank' && savedQuestion) {
-      api.ecosystem(savedQuestion, params.get('url') || undefined)
-        .then((data) => setEco(data))
-        .catch((e) => { setRestoreError((e as Error).message); setView('board'); })
-        .finally(() => setRestoring(false));
+      api.oauthStatus().then((curAuth) => {
+        if (!curAuth.authorized) {
+          setRestoring(false);
+          setView('board');
+          setAuthModal(true);
+          return;
+        }
+        api.ecosystem(savedQuestion, params.get('url') || undefined)
+          .then((data) => setEco(data))
+          .catch((e) => { setRestoreError((e as Error).message); setView('board'); })
+          .finally(() => setRestoring(false));
+      }).catch(() => {
+        setRestoring(false);
+        setView('board');
+        setAuthModal(true);
+      });
     } else {
       setRestoring(false);
     }
@@ -72,7 +95,12 @@ export default function App() {
       callbackUrl.searchParams.delete('oauth');
       window.history.replaceState(null, '', callbackUrl);
       // 回调刚写完会话，重新拉一次授权态而不是用首屏的旧值
-      api.oauthStatus().then(setOauth).catch(() => {});
+      api.oauthStatus().then((nextOauth) => {
+        setOauth(nextOauth);
+        if (nextOauth.authorized) {
+          setAuthModal(false);
+        }
+      }).catch(() => {});
     }
   }, []);
 
@@ -87,9 +115,10 @@ export default function App() {
 
   const logout = useCallback(async () => {
     await api.oauthLogout().catch(() => {});
-    // 登出后回到选题台：画像数据已随会话失效，留在画像页只会渲染出 401
     setView('board');
+    setEco(null);
     setOauth(await api.oauthStatus().catch(() => null));
+    setAuthModal(true);
   }, []);
 
   // 数据来源徽标三态（诚信要求）：「真实数据的历史缓存」和「虚构的演示数据」是两回事，
@@ -125,6 +154,12 @@ export default function App() {
   // 全程黑屏等待体验极差。
   const openTank = useCallback(
     async (question: string, url?: string) => {
+      // 强制要求登录知乎账号，未登录禁止查看任何生态缸（使用 ref 防闭包过期，兼顾直接状态）
+      const currentAuth = oauthRef.current ?? oauth;
+      if (!currentAuth?.authorized) {
+        setAuthModal(true);
+        return;
+      }
       setError('');
       // 中止上一次未完成的构建（快速换题时不并行烧 token）
       abortRef.current?.abort();
@@ -169,12 +204,14 @@ export default function App() {
         if ((e as Error).name === 'AbortError') return;
         if ((e as Error).message.includes('授权登录知乎账号') || (e as Error).message.includes('LOGIN_REQUIRED')) {
           setAuthModal(true);
+        } else if ((e as Error).message.includes('额度') || (e as Error).message.includes('SECRET_REQUIRED')) {
+          setQuotaModal(true);
         } else {
           setError((e as Error).message);
         }
       }
     },
-    [finishBuild],
+    [finishBuild, oauth],
   );
 
   const cancelBuild = useCallback(() => {
@@ -191,13 +228,23 @@ export default function App() {
 
   return (
     <div className="app">
+      {showSplash && (
+        <SplashIntro
+          onComplete={() => {
+            sessionStorage.setItem('splash-played', '1');
+            setShowSplash(false);
+          }}
+        />
+      )}
       <header className="topbar">
           <button className="brand" type="button" aria-label="返回首页" onClick={() => {
+            cancelBuild();
             setView('board');
             setEco(null);
             const homeUrl = new URL(window.location.href);
             homeUrl.search = '';
             window.history.pushState({ view: 'board' }, '', homeUrl);
+            window.scrollTo(0, 0);
           }}>
           <svg className="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
             <rect x="1.5" y="1.5" width="31" height="31" rx="9" fill="#0D1B2E" />
@@ -236,15 +283,32 @@ export default function App() {
           <button className="toast-close" onClick={() => setOauthNotice(null)} aria-label="关闭提示"><Icon.X size={13} /></button>
         </div>
       )}
-      {authModal && (
-        <div className="auth-modal-backdrop" role="presentation" onClick={() => setAuthModal(false)}>
-          <div className="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" onClick={(e) => e.stopPropagation()}>
-            <div className="auth-modal-mark"><Icon.User size={18} /></div>
-            <h2 id="auth-title">请先授权知乎账号</h2>
-            <p>AI 生态缸需要使用你的知乎授权身份，用于访问公开回答并生成专属解说。授权不会把账号凭证交给前端。</p>
+      {quotaModal && (
+        <div className="auth-modal-backdrop" role="presentation" onClick={() => setQuotaModal(false)}>
+          <div className="auth-modal" role="dialog" aria-modal="true" onClick={(e) => e.stopPropagation()}>
+            <div className="auth-modal-mark"><Icon.AlertTriangle size={18} /></div>
+            <h2>本队伍 API 额度不足</h2>
+            <p>新生态缸的构建需要消耗知乎开放平台额度，当前本队伍额度已用尽。前八个已构建好的生态缸仍可直接查看，欢迎体验。</p>
             <div className="auth-modal-actions">
-              <button className="backlink" onClick={() => setAuthModal(false)}>稍后再说</button>
-              <button className="oauth-btn" onClick={() => { window.location.href = '/api/oauth/start'; }}>授权登录知乎</button>
+              <button className="oauth-btn" onClick={() => setQuotaModal(false)}>查看前八个生态缸</button>
+            </div>
+          </div>
+        </div>
+      )}
+      {authModal && (
+        <div className="auth-modal-backdrop" role="presentation">
+          <div className="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" onClick={(e) => e.stopPropagation()}>
+            <div className="auth-modal-mark"><Icon.User size={20} /></div>
+            <h2 id="auth-title">请先授权登录知乎账号</h2>
+            <p>为保护知识内容与符合参赛规范，查看或构建观点生态缸须先完成知乎账号授权登录。授权过程由知乎官方处理，本系统不会接触您的账号密码。</p>
+            <div className="auth-modal-actions" style={{ justifyContent: 'center' }}>
+              <button
+                className="btn primary"
+                style={{ width: '100%', padding: '12px 20px', fontSize: '14.5px', borderRadius: '10px' }}
+                onClick={() => { window.location.href = '/api/oauth/start'; }}
+              >
+                立即授权登录知乎
+              </button>
             </div>
           </div>
         </div>
@@ -265,7 +329,15 @@ export default function App() {
             // 构建过程替代选题台：让用户在等待时看得见「在哪一步、模型在想什么」
             <BuildProgress question={building.question} events={buildEvents} onCancel={cancelBuild} />
           ) : (
-            <HotBoard liveMode={status?.liveMode ?? false} loading={loading} onOpen={openTank} onMeta={setHotMeta} />
+            <HotBoard
+              liveMode={status?.liveMode ?? false}
+              loading={loading}
+              authorized={oauth?.authorized ?? false}
+              onOpen={openTank}
+              onMeta={setHotMeta}
+              onQuotaBlocked={() => setQuotaModal(true)}
+              onRequireAuth={() => setAuthModal(true)}
+            />
           )
         ) : eco ? (
           <TankView eco={eco} onOpen={openTank} />

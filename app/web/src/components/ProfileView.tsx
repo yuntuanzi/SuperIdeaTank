@@ -54,7 +54,7 @@ export function ProfileView({ oauth }: { oauth: OAuthStatus | null }) {
     );
   }
 
-  if (loading) return <div className="panel-card"><div className="loading">正在读取你的公开创作并分析…</div><div className="narrative-raw" aria-live="polite">{thinking || 'DeepSeek 正在分析你的公开创作…'}</div></div>;
+  if (loading) return <div className="panel-card"><div className="loading">正在读取你的公开创作并分析…</div><div className="narrative" aria-live="polite">{thinking || 'DeepSeek 正在分析你的公开创作…'}</div></div>;
   if (error) return <div className="err">{error}</div>;
   if (!profile) return null;
 

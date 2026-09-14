@@ -37,12 +37,11 @@ test('路由列出永久预构建缸，无凭证也可复用；演示放生使�
     const tanks = await fetch(`${base}/api/tanks`);
     assert.equal(tanks.status, 200);
     assert.deepEqual(await tanks.json(), [{ question, url, speciesCount: 1 }]);
-    const tank = await fetch(`${base}/api/ecosystem`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, url }) }).then(r => r.json());
-    assert.equal(tank.source, 'live');
-    assert.equal(tank.cached, true);
-    assert.equal(tank.species[0].annotationSource, 'local-heuristic');
-    assert.equal(tank.species[0].stance, '支持');
-    assert.equal(tank.aiNarrative, null);
+    // 强制门禁：未登录知乎账号时，任何生态缸均拒绝访问（返回 401）
+    const unauthedRes = await fetch(`${base}/api/ecosystem`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, url }) });
+    assert.equal(unauthedRes.status, 401);
+    const unauthedData = await unauthedRes.json();
+    assert.equal(unauthedData.code, 'LOGIN_REQUIRED');
     const release = await fetch(`${base}/api/release`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, draft: species[0].excerpt, species: [] }) }).then(r => r.json());
     assert.equal(release.stance, '支持');
     assert.equal(release.analysisSource, 'rule-only-demo');

@@ -167,10 +167,18 @@ export function loadEcoCache({ dataDir = CACHE_DIR } = {}) {
   }
 }
 
-export function persistEcoCacheEntry(key, data, { dataDir = CACHE_DIR } = {}) {
+export function persistEcoCacheEntry(key, data, { dataDir = CACHE_DIR } = {}, { prebuilt = false } = {}) {
   try {
-    const { cacheDir, cacheFile } = cachePaths(dataDir);
+    const { cacheDir, cacheFile, prebuiltFile } = cachePaths(dataDir);
     if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
+    // 预构建资产走独立文件：永久保留，不参与常规缓存的条目裁剪，
+    // 冷启动时 loadEcoCache 以 prebuilt: true 全量恢复进内存。
+    if (prebuilt) {
+      const entries = readJsonArray(prebuiltFile);
+      const next = [{ k: key, ts: Date.now(), data }, ...entries.filter((e) => e.k !== key)];
+      fs.writeFileSync(prebuiltFile, JSON.stringify(next), 'utf8');
+      return;
+    }
     const entries = readJsonArray(cacheFile);
     const merged = [{ k: key, ts: Date.now(), data }, ...entries.filter((e) => e.k !== key)];
     // 带 AI 叙事的条目消耗过真实直答额度，裁剪时永远保留在 100 条上限之外；

@@ -596,22 +596,13 @@ function topEvidence(hits) {
 export function distributionWarning(items) {
   // 分布坍缩比单条误判更伤产品观感；这里让“全部同色”的系统性失败显性化。
   if (!items.length) return null;
-  const stanceWarning = isCollapsed(items, 'stance');
-  if (stanceWarning) return '立场特征稀疏，多数物种落入同一类，标注可信度低';
   // 策略侧先看「未识别」占比：兜底类过半说明整体说服方式都没识别出来，
   // 这比某一具体类占多数更值得告警，且「未识别」本身不是一种说服方式。
   const unrecognized = items.filter((item) => item.strategy === STRATEGY_FALLBACK).length;
   if (unrecognized / items.length >= 0.5) return '多数回答的说服方式未能识别，策略标注仅供参考';
-  if (isCollapsed(items, 'strategy')) return '策略特征稀疏，多数物种落入同一类，标注可信度低';
   return null;
 }
 
-function isCollapsed(items, key) {
-  // 80% 阈值按整缸观察，不要求每类均匀，只拦截明显退化到单一标签的情况。
-  const counts = new Map();
-  for (const item of items) counts.set(item[key], (counts.get(item[key]) || 0) + 1);
-  return Math.max(...counts.values()) / items.length >= 0.8;
-}
 
 function round3(value) {
   // 固定三位小数避免测试和前端展示受浮点尾差影响。

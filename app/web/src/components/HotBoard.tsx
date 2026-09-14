@@ -18,13 +18,19 @@ const questionIdOf = (url: string) => url.match(/zhihu\.com\/question\/(\d+)/)?.
 export function HotBoard({
   liveMode,
   loading,
+  authorized = false,
   onOpen,
   onMeta,
+  onQuotaBlocked,
+  onRequireAuth,
 }: {
   liveMode: boolean;
   loading: boolean;
+  authorized?: boolean;
   onOpen: (q: string, url?: string) => void;
   onMeta?: (m: HotMeta) => void;
+  onQuotaBlocked?: (pending?: { question: string; url?: string }) => void;
+  onRequireAuth?: () => void;
 }) {
   const [items, setItems] = useState<HotItem[]>([]);
   const [warning, setWarning] = useState('');
@@ -57,6 +63,12 @@ export function HotBoard({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const openItem = (it: HotItem, index: number) => {
+    if (!authorized) { onRequireAuth?.(); return; }
+    if (index >= 8) { onQuotaBlocked?.({ question: it.title, url: it.url }); return; }
+    onOpen(it.title, it.url);
+  };
+
   const isReady = (it: HotItem) => {
     const id = questionIdOf(it.url);
     return id !== null && readyIds.has(id);
@@ -66,13 +78,14 @@ export function HotBoard({
   const readyCount = items.filter(isReady).length;
 
   const submit = () => {
+    if (!authorized) { onRequireAuth?.(); return; }
     const q = query.trim();
     if (q.length < 4) return;
     const m = q.match(/https?:\/\/(www\.)?zhihu\.com\/question\/(\d+)/);
-    if (m) {
-      onOpen(`知乎问题 ${m[2]}`, `https://www.zhihu.com/question/${m[2]}`);
+    if (m && m[2]) {
+      onQuotaBlocked?.({ question: `知乎问题 ${m[2]}`, url: `https://www.zhihu.com/question/${m[2]}` });
     } else {
-      onOpen(q);
+      onQuotaBlocked?.({ question: q });
     }
   };
 
@@ -80,7 +93,7 @@ export function HotBoard({
     <div>
       <section className="hero">
         <div className="kicker">ZHIHU HACKATHON 2026 · OPINION EVOLUTION TANK</div>
-        <h2>
+        <h2 id="hero-title">
           每一个问题，都是一片观点厮杀的生态缸。
           <br />
           现在，你可以亲眼看见这场进化。
@@ -92,16 +105,25 @@ export function HotBoard({
             图标卡形式，图标与右栏 Tab 共用同一套视觉语言 */}
         <div className="hero-caps">
           <div className="cap">
-            <Icon.Target size={16} />
-            <span>观点物种识别</span>
+            <Icon.Target size={18} />
+            <div>
+              <div style={{ fontWeight: 600, color: '#fff' }}>观点物种识别</div>
+              <div style={{ fontSize: '11.5px', color: 'var(--ink-3)', marginTop: '2px' }}>AI 聚类立场与论证策略</div>
+            </div>
           </div>
           <div className="cap">
-            <Icon.History size={16} />
-            <span>演化时间轴重建</span>
+            <Icon.History size={18} />
+            <div>
+              <div style={{ fontWeight: 600, color: '#fff' }}>演化时间轴重建</div>
+              <div style={{ fontSize: '11.5px', color: 'var(--ink-3)', marginTop: '2px' }}>回溯观点争鸣时序更迭</div>
+            </div>
           </div>
           <div className="cap">
-            <Icon.Flask size={16} />
-            <span>放生存活预测</span>
+            <Icon.Flask size={18} />
+            <div>
+              <div style={{ fontWeight: 600, color: '#fff' }}>放生存活预测</div>
+              <div style={{ fontSize: '11.5px', color: 'var(--ink-3)', marginTop: '2px' }}>模拟新回答生存概率</div>
+            </div>
           </div>
         </div>
       </section>
@@ -167,7 +189,7 @@ export function HotBoard({
                 className="hot-main"
                 role="button"
                 tabIndex={0}
-                onClick={() => !loading && onOpen(it.title, it.url)}
+                onClick={() => !loading && openItem(it, i)}
                 onKeyDown={(e) => {
                   if ((e.key === 'Enter' || e.key === ' ') && !loading) {
                     e.preventDefault();
@@ -180,10 +202,10 @@ export function HotBoard({
               </div>
               <div className="hot-actions">
                 <a className="hot-link" href={it.url} target="_blank" rel="noreferrer">
-                  <Icon.ExternalLink size={11} /> 原问题
+                  <Icon.ExternalLink size={12} /> 知乎原题
                 </a>
-                <button className="btn primary" disabled={loading} onClick={() => onOpen(it.title, it.url)}>
-                  {loading ? '构建中…' : '创建生态缸'}
+                <button className="btn primary" disabled={loading} onClick={() => openItem(it, i)}>
+                  {loading ? '构建中…' : isReady(it) ? '进入生态缸' : '构建生态缸'}
                 </button>
               </div>
             </div>

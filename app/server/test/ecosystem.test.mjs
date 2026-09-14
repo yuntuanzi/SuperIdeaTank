@@ -74,7 +74,8 @@ test('解说失败和不可解析格式均不阻断构建', async () => {
   assert.ok(failed.species[0].evidence.strategy.length);
   assert.equal(failed.aiNarrative, null);
   assert.match(failed.aiNarrativeError, /额度耗尽/);
-  assert.ok(failed.annotationWarning);
+  // 分布坍缩类提示已按产品要求移除，单一样本场景同样不应出现告警
+  assert.equal(failed.annotationWarning, null);
   assert.ok(failed.narrative);
   const unstructured = await ecosystem.buildEcosystem(question, '', options({ chat: async () => '  自由文本\n' }));
   assert.equal(unstructured.aiNarrative, '  自由文本\n');

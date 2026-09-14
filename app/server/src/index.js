@@ -97,8 +97,10 @@ function cachedTank(question, questionUrl) {
 
 function storeTank(key, data) {
   if (data.species.length > 0) {
-    ecoCache.set(key, { data, ts: Date.now() });
-    persistEcoCacheEntry(key, data, dataDirOpts());
+    // 构建成功的缸一律按预构建资产持久化：永久保留、不受 24h TTL 清理，
+    // 评委与普通用户随时可复看。数据落在 /opt/opinion-tank-data 数据卷，容器重建不丢。
+    ecoCache.set(key, { data, ts: Date.now(), prebuilt: true });
+    persistEcoCacheEntry(key, data, dataDirOpts(), { prebuilt: true });
   }
 }
 
@@ -107,14 +109,14 @@ app.post('/api/ecosystem', async (req, res) => {
   const questionUrl = String(req.body?.url || '').trim().slice(0, 200);
   if (!question) return res.status(400).json({ error: '请提供问题标题' });
 
-  // 缓存检查必须先于授权门槛：已生成结果不再调用 AI，允许评委直接复用。
-  // 预构建缸是赛前花额度换来的永久资产，不受 24h TTL 限制，无凭证也可复用。
+  // 门禁：强制要求知乎账号授权登录，未登录禁止查看任何生态缸（包含预构建缓存）
+  if (!oauth.isAuthorized(req, res)) {
+    return res.status(401).json({ error: '请先授权登录知乎账号后使用生态缸', code: 'LOGIN_REQUIRED' });
+  }
+
+  // 授权通过后优先命中生态缓存，不重复消耗 AI/知乎额度
   const { key, data: hit } = cachedTank(question, questionUrl);
   if (hit) return res.json(hit);
-  // 只有需要新建/重新调用 AI 时才要求知乎账号授权。
-  if (aiOn() && !oauth.isAuthorized(req, res)) {
-    return res.status(401).json({ error: '请先授权登录知乎账号后使用 AI 生态缸', code: 'LOGIN_REQUIRED' });
-  }
 
   if (!live()) return res.json(demoEcosystem(question));
 
@@ -137,13 +139,12 @@ app.post('/api/ecosystem/stream', async (req, res) => {
   const questionUrl = String(req.body?.url || '').trim().slice(0, 200);
   if (!question) return res.status(400).json({ error: '请提供问题标题' });
 
-  // 先完成会话/授权检查，再发送 SSE headers。OAuth session 可能需要写 Set-Cookie，
-  // 若先 flushHeaders 再调用 isAuthorized，会触发 ERR_HTTP_HEADERS_SENT 并让 Node 进程退出。
-  const { key: streamKey, data: streamHit } = cachedTank(question, questionUrl);
-  const requiresAiAuth = aiOn() && !streamHit && !oauth.isAuthorized(req, res);
-  if (requiresAiAuth) {
-    return res.status(401).json({ error: '请先授权登录知乎账号后使用 AI 生态缸', code: 'LOGIN_REQUIRED' });
+  // 门禁：强制要求知乎账号授权登录，未登录禁止查看任何生态缸（包含预构建缓存）
+  if (!oauth.isAuthorized(req, res)) {
+    return res.status(401).json({ error: '请先授权登录知乎账号后使用生态缸', code: 'LOGIN_REQUIRED' });
   }
+
+  const { key: streamKey, data: streamHit } = cachedTank(question, questionUrl);
 
   res.set({
     'Content-Type': 'text/event-stream; charset=utf-8',
@@ -193,7 +194,7 @@ app.post('/api/ecosystem/stream', async (req, res) => {
 
   try {
     send({ type: 'stage', key: 'start', label: '开始构建生态缸', state: 'start' });
-    if (requiresAiAuth) {
+    if (!streamHit && !aiOn()) {
       send({ type: 'error', message: '请先授权登录知乎账号后使用 AI 生态缸', code: 'LOGIN_REQUIRED' });
       return;
     }

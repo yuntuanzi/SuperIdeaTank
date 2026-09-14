@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react';
 import type { ComponentType } from 'react';
 import { api } from '../api';
 import type { EnvParams, Ecosystem, ReleaseReport, Species } from '../types';
-import { aiSourceModel } from '../types';
 import { buildReportSvg, downloadPng, downloadSvg } from '../lib/report';
 import { Icon } from './Icon';
 import type { IconProps } from './Icon';
@@ -61,88 +60,49 @@ export function Workspace({
         )}
         {tab === 'report' && <ReportPanel eco={eco} release={release} />}
       </div>
-      {/* AI 生态解说常驻右栏底部（spec 第 4 节）：四个 tab 之外的常驻区块，
-          填掉 1440 下右栏空白；三种状态都如实展示，没有解说也不隐藏 */}
+      {/* AI 生态解说常驻右栏底部：内容在构建时已生成并随缸缓存，
+          这里只做展示，不提供重新生成入口（额度保护 + 诚信标注一致性） */}
       <NarrativeBlock eco={eco} />
     </div>
   );
 }
 
-// ---------- AI 生态解说（整缸派系归纳，与逐条标注互为独立路径） ----------
+// ---------- AI 生态解说（只读展示，随缸缓存） ----------
 
 function NarrativeBlock({ eco }: { eco: Ecosystem }) {
-  const [history, setHistory] = useState<any[]>([]);
-  const [remaining, setRemaining] = useState(2);
-  const [generating, setGenerating] = useState(false);
-  useEffect(() => {
-    api.narrativeHistory().then((d) => { setHistory(d.items || []); setRemaining(d.remaining ?? 0); }).catch(() => {});
-  }, [eco.question]);
-  const regenerate = async () => {
-    if (generating || remaining <= 0) return;
-    setGenerating(true);
-    try {
-      const d = await api.narrative(eco.question, eco.species);
-      setHistory(d.history || [d]);
-      setRemaining(d.remaining ?? 0);
-    } catch {
-      // 未授权或达到次数由接口状态在现有错误通道中处理
-    } finally { setGenerating(false); }
-  };
-  const selected = history.length ? history[history.length - 1] : null;
-  const displayEco = selected ? { ...eco, ...selected } : eco;
-  // 来源一律从数据里读，不再硬编码模型名：换装 DeepSeek 后写死旧模型名会让
-  // 界面撒谎（明明是新模型却标着旧模型）。没有来源就如实说没有。
-  const src = displayEco.aiNarrativeSource;
-  const model = aiSourceModel(src);
-  const srcBadge = src ? `DeepSeek · ${model}` : '未生成';
-  const srcNote = src
-    ? '由 DeepSeek 生成 · 与左侧逐条标注为两条独立路径，可互相印证'
-    : '本缸未生成 AI 解说 · 左侧逐条标注不受影响';
+  const factions = eco.aiFactions ?? [];
+  const hasFactions = factions.length > 0;
+  if (!hasFactions && !eco.aiNarrative) return null;
   return (
     <div className="panel-card narrative-block">
       <div className="panel-title">
-        <span>AI 生态解说</span>
-        <span className="badge-info">{srcBadge}</span>
-        <button className="btn" onClick={regenerate} disabled={generating || remaining <= 0}>
-          {generating ? '生成中…' : `重新生成（剩余 ${remaining} 次）`}
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <Icon.Brain size={16} />
+          <span>AI 观点生态解说</span>
+        </div>
+        {eco.aiNarrativeSource && <span className="badge-info">随缸缓存</span>}
       </div>
-      {history.length > 1 && <div className="chip-row">{history.map((item, i) => <button className="chip" key={item.createdAt || i}>{item.version ? `第 ${item.version} 次` : `结果 ${i + 1}`}</button>)}</div>}
-      {displayEco.aiFactions && displayEco.aiFactions.length > 0 ? (
+      {hasFactions ? (
         <>
-          {/* 派系序号用大号 tabular-nums，与热榜列表的编号风格一致 */}
-          {displayEco.aiFactions.map((f: { name: string; claim: string; persuasion: string }, i: number) => (
+          {factions.map((f: { name: string; claim: string; persuasion: string }, i: number) => (
             <div className="faction" key={i}>
               <span className="faction-idx">{String(i + 1).padStart(2, '0')}</span>
               <div className="faction-body">
                 <div className="faction-name">{f.name}</div>
-                <div className="faction-claim">代表观点：{f.claim}</div>
-                <div className="faction-persuasion">说服方式：{f.persuasion}</div>
+                <div className="faction-claim">{f.claim}</div>
+                <div className="faction-persuasion">说服策略：{f.persuasion}</div>
               </div>
             </div>
           ))}
-          {displayEco.aiDominant && (
+          {eco.aiDominant && (
             <div className="faction-dominant">
-              <span className="ev-label">谁占上风</span>
-              {displayEco.aiDominant}
+              <span className="ev-label">生态优势方</span>
+              <span>{eco.aiDominant}</span>
             </div>
           )}
-          {/* 双通道叙事是产品说明的核心，这行小字不要删 */}
-          <p className="tiny-note">{srcNote}</p>
-        </>
-      ) : displayEco.aiNarrative ? (
-        <>
-          {/* 原文独立于结构解析：解析未命中时仍展示已取得的解说，不丢内容 */}
-          <div className="badge-warn" style={{ marginBottom: 8 }}>AI 解说原文（结构解析未命中）</div>
-          <div className="narrative-raw">{displayEco.aiNarrative}</div>
-          <p className="tiny-note">{srcNote}</p>
         </>
       ) : (
-        <>
-          {/* 不编造缺省原因：只如实说没生成，并把真实错误（若有）原样给出 */}
-          <div className="narrative-empty">本缸暂无 AI 生态解说。左侧逐条标注不受影响。</div>
-          {eco.aiNarrativeError && <div className="ev-empty" style={{ marginTop: 6 }}>原因：{eco.aiNarrativeError}</div>}
-        </>
+        <div className="narrative-raw">{eco.aiNarrative}</div>
       )}
     </div>
   );
@@ -238,12 +198,6 @@ function EnvPanel({ params, onParams }: { params: EnvParams; onParams: (p: EnvPa
 
 // ---------- 放生实验 ----------
 
-const DRAFT_SEEDS: [string, string][] = [
-  ['反对 · 数据论证', '我整理了近三年所在行业的工时与产出数据：加班最严重的季度，人均有效产出反而下降了两成。无效加班不是奋斗，是把工位当成了秀场。'],
-  ['支持 · 故事叙事', '毕业第一年，我每天最后一个离开工位。直到有天凌晨十一点，我发现自己改的第三版方案，和第一版一模一样。那一刻我明白，疲惫不等于成长。'],
-  ['解构 · 抖机灵', '大家反感的不是加班，是领导没走自己不敢走。建议所有公司把「下班时间」和「表演时间」在制度上分开核算，问题就解决了一半。'],
-];
-
 function ReleasePanel({
   eco,
   report,
@@ -267,6 +221,7 @@ function ReleasePanel({
   useEffect(() => {
     const saved = localStorage.getItem(`${releaseKey}:report`);
     if (!report && saved) { try { onReport(JSON.parse(saved)); } catch { /* ignore corrupt local state */ } }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [releaseKey]);
 
   const submit = async () => {

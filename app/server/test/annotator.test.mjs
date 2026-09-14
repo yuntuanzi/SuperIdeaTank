@@ -54,7 +54,7 @@ test('annotates real Zhihu anchors above the required hit rate', () => {
   }
 });
 
-test('annotateAll warns when one distribution collapses', () => {
+test('annotateAll no longer emits distribution-collapse warnings', () => {
   const items = Array.from({ length: 10 }, (_, index) => ({
     id: `plain-${index}`,
     excerpt: `这是一段普通说明文字 ${index}，没有明显观点，只是在补足背景信息。`,
@@ -62,7 +62,8 @@ test('annotateAll warns when one distribution collapses', () => {
 
   const result = annotateAll('分享一次普通经历', items);
   assert.equal(result.items.length, 10);
-  assert.ok(result.annotationWarning);
+  // 分布坍缩类提示已按产品要求移除：即使整批落入同一类也不再告警
+  assert.equal(result.annotationWarning, null);
 });
 
 test('low evidence text falls back to neutral with explicit low-confidence evidence', () => {
