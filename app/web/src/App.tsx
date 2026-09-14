@@ -20,8 +20,13 @@ const PROGRESS_DELAY_MS = 350;
 
 export default function App() {
   const [status, setStatus] = useState<{ liveMode: boolean } | null>(null);
-  const [view, setView] = useState<'board' | 'tank' | 'profile'>('board');
+  const [view, setView] = useState<'board' | 'tank' | 'profile'>(() => {
+    const saved = new URLSearchParams(window.location.search).get('view');
+    return saved === 'tank' || saved === 'profile' ? saved : 'board';
+  });
   const [eco, setEco] = useState<Ecosystem | null>(null);
+  const [restoring, setRestoring] = useState(() => new URLSearchParams(window.location.search).get('view') === 'tank');
+  const [restoreError, setRestoreError] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   // 热榜来源元信息由 HotBoard 上报，顶栏三态徽标需要它区分 实时/缓存/快照（spec 第 7 节）
@@ -41,6 +46,17 @@ export default function App() {
   useEffect(() => {
     api.status().then(setStatus).catch(() => setStatus({ liveMode: false }));
     api.oauthStatus().then(setOauth).catch(() => setOauth(null));
+    // 通过 URL 恢复当前生态缸：服务端优先命中生态缓存，不重复消耗 AI/知乎额度。
+    const params = new URLSearchParams(window.location.search);
+    const savedQuestion = params.get('question');
+    if (params.get('view') === 'tank' && savedQuestion) {
+      api.ecosystem(savedQuestion, params.get('url') || undefined)
+        .then((data) => setEco(data))
+        .catch((e) => { setRestoreError((e as Error).message); setView('board'); })
+        .finally(() => setRestoring(false));
+    } else {
+      setRestoring(false);
+    }
     // 从知乎授权页跳回来时 URL 带 ?oauth=ok/err（服务端 302 回来的），
     // 消费掉这个一次性标记：展示结果、清掉参数，避免刷新后提示复读
     const flag = new URLSearchParams(window.location.search).get('oauth');
@@ -127,6 +143,12 @@ export default function App() {
         finishBuild(ac);
         setEco(data);
         setView('tank');
+        const nextUrl = new URL(window.location.href);
+        nextUrl.searchParams.set('view', 'tank');
+        nextUrl.searchParams.set('question', question);
+        if (url) nextUrl.searchParams.set('url', url);
+        else nextUrl.searchParams.delete('url');
+        window.history.pushState({ view: 'tank', question, url }, '', nextUrl);
         window.scrollTo(0, 0);
       } catch (e) {
         finishBuild(ac);
@@ -168,7 +190,14 @@ export default function App() {
         </div>
         <div className="topbar-actions">
           {view !== 'board' && (
-            <button className="backlink" onClick={() => setView('board')}>
+            <button className="backlink" onClick={() => {
+              setView('board');
+              const nextUrl = new URL(window.location.href);
+              nextUrl.searchParams.delete('view');
+              nextUrl.searchParams.delete('question');
+              nextUrl.searchParams.delete('url');
+              window.history.pushState({ view: 'board' }, '', nextUrl);
+            }}>
               <Icon.ArrowLeft size={13} /> 返回选题台
             </button>
           )}
@@ -189,16 +218,18 @@ export default function App() {
           {oauthNotice.text}
         </div>
       )}
-      {error && (
+      {(error || restoreError) && (
         <div className="err" style={{ marginBottom: 14 }}>
           <Icon.AlertTriangle size={14} />
-          <span>{error}</span>
+          <span>{error || restoreError}</span>
         </div>
       )}
 
       {/* key=view：视图切换时重挂载触发一次入场淡入，三个视图各自独立成段 */}
       <main key={view} className="view-root">
-        {view === 'board' ? (
+        {restoring ? (
+          <div className="loading">正在恢复生态缸…</div>
+        ) : view === 'board' ? (
           building && showProgress ? (
             // 构建过程替代选题台：让用户在等待时看得见「在哪一步、模型在想什么」
             <BuildProgress question={building.question} events={buildEvents} onCancel={cancelBuild} />

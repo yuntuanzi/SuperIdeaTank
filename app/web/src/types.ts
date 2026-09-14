@@ -109,6 +109,7 @@ export type BuildEvent =
   // AI 的思考过程增量（推理模型先吐 reasoning_content 再吐正文）
   | { type: 'reasoning'; text: string; stage?: string }
   | { type: 'result'; data: Ecosystem }
+  | { type: 'end' }
   | { type: 'error'; message: string; code?: string | number };
 
 // ---- 知乎 OAuth + 我的观点画像（2026-09-13 新增，既有字段未动）----

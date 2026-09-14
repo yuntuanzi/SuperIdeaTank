@@ -265,5 +265,12 @@ export function createOAuth(config) {
     session(request, response).error = { code: String(error.code || 'OAUTH_FAILED'), message: String(error.message).slice(0, 200) };
   }
 
-  return { status, start, callback, logout, fetchUserContents, sessionId, record };
+  // 仅供服务端权限守卫使用，不把 token 或会话对象暴露给路由层/前端。
+  function isAuthorized(request, response) {
+    const current = session(request, response);
+    clearIfExpired(current);
+    return Boolean(current.token);
+  }
+
+  return { status, start, callback, logout, fetchUserContents, sessionId, record, isAuthorized };
 }

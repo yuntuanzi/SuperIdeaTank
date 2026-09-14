@@ -9,7 +9,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { hasSecret, fetchHot, fetchQuota, zhidaCount, hashKey, ecoCache, ECO_TTL, loadEcoCache, persistEcoCacheEntry, listReadyTanks, dedup } from './zhihu.js';
-import { buildEcosystem, analyzeRelease, refreshLocalAnnotations } from './ecosystem.js';
+import { buildEcosystem, analyzeRelease, explainEcosystem, refreshLocalAnnotations } from './ecosystem.js';
 import { annotateOne } from './annotator.js';
 import { survivalRule } from './ruleModel.js';
 import { demoHot, demoEcosystem } from './demoData.js';
@@ -41,6 +41,9 @@ loadAiCache();
 // 放生分析缓存：同一问题+同一草稿 1 小时内复用，防误触重复消耗
 const releaseCache = new Map();
 const RELEASE_TTL = 60 * 60 * 1000;
+// AI 生态解说历史：按知乎授权会话隔离，每日最多重新生成 2 次。
+const narrativeHistory = new Map(); // sessionId -> { day, items: [{ data, ts }] }
+const NARRATIVE_DAILY_LIMIT = 2;
 
 app.get('/api/status', (req, res) => {
   const cfg = aiConfig();
@@ -104,10 +107,14 @@ app.post('/api/ecosystem', async (req, res) => {
   const questionUrl = String(req.body?.url || '').trim().slice(0, 200);
   if (!question) return res.status(400).json({ error: '请提供问题标题' });
 
-  // 缓存检查必须先于演示降级：预构建缸是赛前花额度换来的永久资产，
-  // 不受 24h TTL 限制，无凭证时也必须可复用。
+  // 缓存检查必须先于授权门槛：已生成结果不再调用 AI，允许评委直接复用。
+  // 预构建缸是赛前花额度换来的永久资产，不受 24h TTL 限制，无凭证也可复用。
   const { key, data: hit } = cachedTank(question, questionUrl);
   if (hit) return res.json(hit);
+  // 只有需要新建/重新调用 AI 时才要求知乎账号授权。
+  if (aiOn() && !oauth.isAuthorized(req, res)) {
+    return res.status(401).json({ error: '请先授权登录知乎账号后使用 AI 生态缸', code: 'LOGIN_REQUIRED' });
+  }
 
   if (!live()) return res.json(demoEcosystem(question));
 
@@ -152,7 +159,18 @@ app.post('/api/ecosystem/stream', async (req, res) => {
 
   // 客户端断开（用户返回上一页）时中止上游 AI 请求，不再空烧 token
   const ac = new AbortController();
+  // 缓存命中和演示结果可以匿名复用；新建 AI 缸才要求知乎授权。
+  const { key: streamKey, data: streamHit } = cachedTank(question, questionUrl);
+  const requiresAiAuth = aiOn() && !streamHit && !oauth.isAuthorized(req, res);
+  req.on('aborted', () => {
+    if (res.writableEnded) return;
+    closed = true;
+    ac.abort();
+  });
+  // req.close 在正常响应完成时也可能触发，不能把它当成客户端取消；
+  // 只有响应仍未结束且请求确实被中止时才终止上游 AI。
   req.on('close', () => {
+    if (res.writableEnded || !req.aborted) return;
     closed = true;
     ac.abort();
   });
@@ -170,18 +188,25 @@ app.post('/api/ecosystem/stream', async (req, res) => {
 
   try {
     send({ type: 'stage', key: 'start', label: '开始构建生态缸', state: 'start' });
+    if (requiresAiAuth) {
+      send({ type: 'error', message: '请先授权登录知乎账号后使用 AI 生态缸', code: 'LOGIN_REQUIRED' });
+      return;
+    }
 
-    const { key, data: hit } = cachedTank(question, questionUrl);
+    const key = streamKey;
+    const hit = streamHit;
     if (hit) {
       send({ type: 'log', text: '命中已就绪的生态缸缓存，不消耗任何接口额度' });
       send({ type: 'stage', key: 'done', label: '来自预构建缓存', state: 'done' });
       send({ type: 'result', data: hit });
+      send({ type: 'end' });
       return;
     }
 
     if (!live()) {
       send({ type: 'log', text: '未配置开放平台凭证，返回演示数据集' });
       send({ type: 'result', data: demoEcosystem(question) });
+      send({ type: 'end' });
       return;
     }
 
@@ -195,6 +220,7 @@ app.post('/api/ecosystem/stream', async (req, res) => {
     storeTank(key, data);
     send({ type: 'stage', key: 'done', label: '构建完成', state: 'done' });
     send({ type: 'result', data });
+    send({ type: 'end' });
   } catch (e) {
     send({ type: 'error', message: e.message, code: e.code });
   } finally {
@@ -205,6 +231,38 @@ app.post('/api/ecosystem/stream', async (req, res) => {
       /* 连接可能已被客户端关闭 */
     }
   }
+});
+
+app.post('/api/ecosystem/narrative', async (req, res) => {
+  const question = String(req.body?.question || '').trim().slice(0, 120);
+  const species = Array.isArray(req.body?.species) ? req.body.species : [];
+  if (!question || !species.length) return res.status(400).json({ error: '需要 question 与 species' });
+  if (!aiOn() || !oauth.isAuthorized(req, res)) return res.status(401).json({ error: '请先授权登录知乎账号后使用 AI 解说', code: 'LOGIN_REQUIRED' });
+  const sid = oauth.sessionId(req, res);
+  const day = new Date().toISOString().slice(0, 10);
+  const current = narrativeHistory.get(sid);
+  const history = current?.day === day ? current : { day, items: [] };
+  if (history.items.length >= NARRATIVE_DAILY_LIMIT) {
+    return res.status(429).json({ error: '今日 AI 生态解说重新生成次数已用完（每日 2 次）', code: 'NARRATIVE_DAILY_LIMIT', remaining: 0, history: history.items });
+  }
+  try {
+    const data = await explainEcosystem(question, species, { includeAi: true });
+    const item = { ...data, createdAt: Date.now(), version: history.items.length + 1 };
+    history.items.push(item);
+    narrativeHistory.set(sid, history);
+    res.json({ ...item, remaining: NARRATIVE_DAILY_LIMIT - history.items.length, history: history.items });
+  } catch (e) {
+    res.status(502).json({ error: `AI 解说生成失败：${e.message}`, code: e.code });
+  }
+});
+
+app.get('/api/ecosystem/narrative/history', (req, res) => {
+  noStore(res);
+  const sid = oauth.sessionId(req, res);
+  const day = new Date().toISOString().slice(0, 10);
+  const current = narrativeHistory.get(sid);
+  const history = current?.day === day ? current.items : [];
+  res.json({ items: history, remaining: Math.max(0, NARRATIVE_DAILY_LIMIT - history.length) });
 });
 
 app.post('/api/release', async (req, res) => {

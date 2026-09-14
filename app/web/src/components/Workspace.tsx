@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { ComponentType } from 'react';
 import { api } from '../api';
 import type { EnvParams, Ecosystem, ReleaseReport, Species } from '../types';
@@ -37,13 +37,17 @@ export function Workspace({
   release: ReleaseReport | null;
   onRelease: (r: ReleaseReport | null) => void;
 }) {
-  const [tab, setTab] = useState<Tab>('timeline');
+  const [tab, setTab] = useState<Tab>(() => {
+    const saved = sessionStorage.getItem('workspace-tab');
+    return saved === 'timeline' || saved === 'env' || saved === 'release' || saved === 'report' ? saved : 'timeline';
+  });
+  const changeTab = (next: Tab) => { setTab(next); sessionStorage.setItem('workspace-tab', next); };
 
   return (
     <div className="panel">
       <div className="segmented">
         {TABS.map(({ key, label, icon: TabIcon }) => (
-          <button key={key} className={`seg-btn ${tab === key ? 'active' : ''}`} onClick={() => setTab(key)}>
+          <button key={key} className={`seg-btn ${tab === key ? 'active' : ''}`} onClick={() => changeTab(key)}>
             <TabIcon size={13} />
             {label}
           </button>
@@ -67,9 +71,28 @@ export function Workspace({
 // ---------- AI 生态解说（整缸派系归纳，与逐条标注互为独立路径） ----------
 
 function NarrativeBlock({ eco }: { eco: Ecosystem }) {
+  const [history, setHistory] = useState<any[]>([]);
+  const [remaining, setRemaining] = useState(2);
+  const [generating, setGenerating] = useState(false);
+  useEffect(() => {
+    api.narrativeHistory().then((d) => { setHistory(d.items || []); setRemaining(d.remaining ?? 0); }).catch(() => {});
+  }, [eco.question]);
+  const regenerate = async () => {
+    if (generating || remaining <= 0) return;
+    setGenerating(true);
+    try {
+      const d = await api.narrative(eco.question, eco.species);
+      setHistory(d.history || [d]);
+      setRemaining(d.remaining ?? 0);
+    } catch {
+      // 未授权或达到次数由接口状态在现有错误通道中处理
+    } finally { setGenerating(false); }
+  };
+  const selected = history.length ? history[history.length - 1] : null;
+  const displayEco = selected ? { ...eco, ...selected } : eco;
   // 来源一律从数据里读，不再硬编码模型名：换装 DeepSeek 后写死旧模型名会让
   // 界面撒谎（明明是新模型却标着旧模型）。没有来源就如实说没有。
-  const src = eco.aiNarrativeSource;
+  const src = displayEco.aiNarrativeSource;
   const model = aiSourceModel(src);
   const srcBadge = src ? `DeepSeek · ${model}` : '未生成';
   const srcNote = src
@@ -80,11 +103,15 @@ function NarrativeBlock({ eco }: { eco: Ecosystem }) {
       <div className="panel-title">
         <span>AI 生态解说</span>
         <span className="badge-info">{srcBadge}</span>
+        <button className="btn" onClick={regenerate} disabled={generating || remaining <= 0}>
+          {generating ? '生成中…' : `重新生成（剩余 ${remaining} 次）`}
+        </button>
       </div>
-      {eco.aiFactions && eco.aiFactions.length > 0 ? (
+      {history.length > 1 && <div className="chip-row">{history.map((item, i) => <button className="chip" key={item.createdAt || i}>{item.version ? `第 ${item.version} 次` : `结果 ${i + 1}`}</button>)}</div>}
+      {displayEco.aiFactions && displayEco.aiFactions.length > 0 ? (
         <>
           {/* 派系序号用大号 tabular-nums，与热榜列表的编号风格一致 */}
-          {eco.aiFactions.map((f, i) => (
+          {displayEco.aiFactions.map((f: { name: string; claim: string; persuasion: string }, i: number) => (
             <div className="faction" key={i}>
               <span className="faction-idx">{String(i + 1).padStart(2, '0')}</span>
               <div className="faction-body">
@@ -94,20 +121,20 @@ function NarrativeBlock({ eco }: { eco: Ecosystem }) {
               </div>
             </div>
           ))}
-          {eco.aiDominant && (
+          {displayEco.aiDominant && (
             <div className="faction-dominant">
               <span className="ev-label">谁占上风</span>
-              {eco.aiDominant}
+              {displayEco.aiDominant}
             </div>
           )}
           {/* 双通道叙事是产品说明的核心，这行小字不要删 */}
           <p className="tiny-note">{srcNote}</p>
         </>
-      ) : eco.aiNarrative ? (
+      ) : displayEco.aiNarrative ? (
         <>
           {/* 原文独立于结构解析：解析未命中时仍展示已取得的解说，不丢内容 */}
           <div className="badge-warn" style={{ marginBottom: 8 }}>AI 解说原文（结构解析未命中）</div>
-          <div className="narrative-raw">{eco.aiNarrative}</div>
+          <div className="narrative-raw">{displayEco.aiNarrative}</div>
           <p className="tiny-note">{srcNote}</p>
         </>
       ) : (
@@ -228,9 +255,19 @@ function ReleasePanel({
   onReport: (r: ReleaseReport | null) => void;
   visible: Species[];
 }) {
-  const [draft, setDraft] = useState('');
+  const releaseKey = `release:${eco.question}`;
+  const [draft, setDraft] = useState(() => localStorage.getItem(`${releaseKey}:draft`) || '');
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem(`${releaseKey}:draft`, draft);
+    if (report) localStorage.setItem(`${releaseKey}:report`, JSON.stringify(report));
+  }, [releaseKey, draft, report]);
+  useEffect(() => {
+    const saved = localStorage.getItem(`${releaseKey}:report`);
+    if (!report && saved) { try { onReport(JSON.parse(saved)); } catch { /* ignore corrupt local state */ } }
+  }, [releaseKey]);
 
   const submit = async () => {
     setLoading(true);

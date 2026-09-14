@@ -61,14 +61,10 @@ export const api = {
     let buffer = '';
     let result: Ecosystem | null = null;
     let failure: string | null = null;
-    for (;;) {
-      const { value, done } = await reader.read();
-      if (done) break;
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split('\n');
-      // 最后一段可能是被切断的帧，留到下一轮拼接
-      buffer = lines.pop() ?? '';
-      for (const rawLine of lines) {
+    // SSE 帧可能跨多个网络分片；统一从这里消费完整行，避免最后一帧
+    // 没有尾部换行时被遗留在 buffer 里，最终误报「构建未返回结果」。
+    const consumeLines = (text: string) => {
+      for (const rawLine of text.split('\n')) {
         const line = rawLine.trim();
         // 空行与以 ':' 开头的 SSE 注释行（服务端心跳）都不是事件
         if (!line || line.startsWith(':')) continue;
@@ -83,11 +79,31 @@ export const api = {
         if (evt.type === 'result') result = evt.data;
         if (evt.type === 'error') failure = evt.message;
       }
+    };
+    for (;;) {
+      const { value, done } = await reader.read();
+      if (done) {
+        // TextDecoder 可能还持有半个 UTF-8 字符，先 flush；再消费没有换行的尾帧。
+        buffer += decoder.decode();
+        if (buffer.trim()) consumeLines(`${buffer}\n`);
+        break;
+      }
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      // 最后一段可能是被切断的帧，留到下一轮拼接
+      buffer = lines.pop() ?? '';
+      consumeLines(lines.join('\n'));
     }
     // result 优先于 error：服务端可能先报一次局部失败（如赞同数补齐失败）再正常收尾
     if (result) return result;
+    if (handlers.signal?.aborted) {
+      throw new DOMException('请求已取消', 'AbortError');
+    }
     throw new Error(failure || '构建未返回结果');
   },
+  narrative: (question: string, species: Species[]) =>
+    fetch('/api/ecosystem/narrative', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, species }) }).then((r) => json<any>(r)),
+  narrativeHistory: () => fetch('/api/ecosystem/narrative/history').then((r) => json<{ items: any[]; remaining: number }>(r)),
   release: (question: string, draft: string, species: Species[]) =>
     fetch('/api/release', {
       method: 'POST',
